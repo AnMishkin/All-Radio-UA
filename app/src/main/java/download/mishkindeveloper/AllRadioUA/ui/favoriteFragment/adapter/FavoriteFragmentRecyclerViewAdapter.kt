@@ -2,6 +2,7 @@ package download.mishkindeveloper.AllRadioUA.ui.favoriteFragment.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.exoplayer2.ExoPlayer
@@ -69,6 +70,7 @@ class FavoriteFragmentRecyclerViewAdapter(
             .into(holder.imageViewWave)
         holder.itemView.setOnClickListener {
             setRadioWaveAndPlay(position)
+            //MotionEvent.ACTION_UP
         }
     }
 
@@ -77,6 +79,7 @@ class FavoriteFragmentRecyclerViewAdapter(
         mPlayer.setMediaItem(mediaItem)
         mPlayer.play()
         mService.setRadioWave(items[position])
+        //MotionEvent.ACTION_UP
     }
 
     override fun getItemCount(): Int {

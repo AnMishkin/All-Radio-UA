@@ -27,8 +27,11 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/4f1523588cafba2b7f464e6c001f876f/transformed/jetified-okio-jvm-3.0.0.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f2ae01e53caa8b24fe35ddf216661311/transformed/jetified-kotlinx-coroutines-core-jvm-1.5.0.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2413d0e52122390097dbdf7708b21969/transformed/jetified-kotlin-stdlib-jdk8-1.6.21.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dbcc75a26bfb80f3d5d7f0c4db7809f7/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/48a5b0a9c642a10b8d00ac3a18ee6bf4/transformed/material-1.6.1-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c295f6d93dd72aa3119241261cb4c968/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2621d736bed7477ffacd5891523b4309/transformed/recyclerview-1.2.1-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/391d049e93e291787be47d0df26a9ef6/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dbcc75a26bfb80f3d5d7f0c4db7809f7/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3010838ee4c5d35a18d2000d3602ee7a/transformed/jetified-dagger-android-support-2.20-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f75200e7e1c5936346c05f6cb07aa072/transformed/appcompat-1.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9f31fb4e771fc3db731b6adb785f06a2/transformed/jetified-firebase-database-ktx-20.0.5-api.jar</arg>
@@ -43,7 +46,10 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f505ab0610e4979726dfc6c0a1ff5e65/transformed/jetified-firebase-common-20.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/523d8e21f59805fb1b8c8d60a51d988c/transformed/jetified-firebase-components-17.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/54507add2e3ac3297706d6b2388f26bf/transformed/jetified-play-services-ads-21.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c295f6d93dd72aa3119241261cb4c968/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0d0a98d3ef77fa9c2eda57690e8d8e96/transformed/browser-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9df01119c465e913dae4ab9441803a1e/transformed/legacy-support-core-ui-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/995799bbbffac468daa501697b99a8e0/transformed/drawerlayout-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6995ce3e1c358bd013c10d4291df757f/transformed/coordinatorlayout-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0f0e772c75617cc624f92b96af7db500/transformed/jetified-play-services-appset-16.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6722ea94d651679073dfcbf4a656f5db/transformed/jetified-firebase-database-collection-18.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/97a79dc1cfa9e85ed696f18daf1b1bd5/transformed/jetified-play-services-base-18.0.1-api.jar</arg>
@@ -62,14 +68,12 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/eed06a6c3e966a1489f4179fbca6bb2f/transformed/jetified-firebase-measurement-connector-19.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/03d67a467ac15bfc8d535c5c39cd9aa1/transformed/jetified-play-services-basement-18.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/58a03f8d58d2b496ba341f6e1d6a40a6/transformed/fragment-1.3.6-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fe1a9908b6b74e7a450f22ff58bdb2e2/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/8161732ca44532e4070d29f0bf1c0001/transformed/slidingpanelayout-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/7d4b5354c0cf1e1817b3da7c645d935f/transformed/customview-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/11f0a0f748efa61c4dc671e78aac38e9/transformed/jetified-activity-1.2.4-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dd91b97acdfa499856afcd1785deae70/transformed/jetified-appcompat-resources-1.4.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0d0a98d3ef77fa9c2eda57690e8d8e96/transformed/browser-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9df01119c465e913dae4ab9441803a1e/transformed/legacy-support-core-ui-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/995799bbbffac468daa501697b99a8e0/transformed/drawerlayout-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6995ce3e1c358bd013c10d4291df757f/transformed/coordinatorlayout-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/07ece32c3b7d68f1fdd471107a670da7/transformed/dynamicanimation-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2621d736bed7477ffacd5891523b4309/transformed/recyclerview-1.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b4412061763ed7f59f28068100d60053/transformed/transition-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6f1699b96e4796de7890adf525228043/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/32f043aa10645f458faacca84e3e31ef/transformed/vectordrawable-1.1.0-api.jar</arg>
@@ -77,18 +81,14 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3925c6e03a704465bfb2ff8299b42f11/transformed/jetified-exoplayer-ui-2.18.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3d3e90dec76a20a0c08bc0ad619e5b26/transformed/jetified-extension-mediasession-2.18.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/058e7741336732e2138fee22e5e24d31/transformed/media-1.4.3-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fe1a9908b6b74e7a450f22ff58bdb2e2/transformed/viewpager-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a52567c2c472844d57393d93fb1583aa/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fda00ceb41941d6510ce6ccddbe624a4/transformed/loader-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/8161732ca44532e4070d29f0bf1c0001/transformed/slidingpanelayout-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/7d4b5354c0cf1e1817b3da7c645d935f/transformed/customview-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d0b225ed1471d54892d0b39b28117380/transformed/swiperefreshlayout-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f565a0ccd4ec6d4da698ac2036def36c/transformed/asynclayoutinflater-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/088cb7a98655e7ed8aeb6f5e6077423e/transformed/core-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/49db322d8cbb73b042bbab93120f46be/transformed/cursoradapter-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/1a8dcdd3e0c98a055b947c9e24d3a5da/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9cb33c40b96a0a04cadb5215f69a3ffa/transformed/jetified-savedstate-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/391d049e93e291787be47d0df26a9ef6/transformed/cardview-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c4f7e6d589757014c33734614b27e9dd/transformed/lifecycle-runtime-2.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ea5941afc2a450cc7360d5ecbed1756a/transformed/exifinterface-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d467c7960cb7c088d29c34122268d33d/transformed/jetified-dagger-android-2.20-api.jar</arg>
@@ -241,8 +241,11 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.airbnb.android:lottie:3.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.dagger:dagger-android-support:2.20@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.4.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-ktx:20.0.5@aar" level="project" />
@@ -257,7 +260,10 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:20.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-components:17.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads:21.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.browser:browser:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-appset:16.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection:18.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:18.0.1@aar" level="project" />
@@ -276,14 +282,12 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:18.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.3.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.activity:activity:1.2.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat-resources:1.4.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.browser:browser:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.transition:transition:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
@@ -291,18 +295,14 @@
     <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.18.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.exoplayer:extension-mediasession:2.18.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.media:media:1.4.3@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.core:core:1.8.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.dagger:dagger-android:2.20@aar" level="project" />

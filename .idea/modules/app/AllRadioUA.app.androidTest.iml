@@ -34,15 +34,17 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c63e5416e9941d37c910ab397511f9ef/transformed/jetified-hamcrest-library-1.3.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d5a9618544e53300659118423ac4aafc/transformed/jetified-hamcrest-core-1.3.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a17913a866da34110778264ac800256e/transformed/jetified-core-1.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dbcc75a26bfb80f3d5d7f0c4db7809f7/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/48a5b0a9c642a10b8d00ac3a18ee6bf4/transformed/material-1.6.1-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c295f6d93dd72aa3119241261cb4c968/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2621d736bed7477ffacd5891523b4309/transformed/recyclerview-1.2.1-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/391d049e93e291787be47d0df26a9ef6/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dbcc75a26bfb80f3d5d7f0c4db7809f7/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3010838ee4c5d35a18d2000d3602ee7a/transformed/jetified-dagger-android-support-2.20-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f75200e7e1c5936346c05f6cb07aa072/transformed/appcompat-1.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9f31fb4e771fc3db731b6adb785f06a2/transformed/jetified-firebase-database-ktx-20.0.5-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/8ac03cf7119e96099995821bc33eff6e/transformed/jetified-storage-1.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0b9ebe7af5233f0b4fb0984da6b887e2/transformed/monitor-1.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/54507add2e3ac3297706d6b2388f26bf/transformed/jetified-play-services-ads-21.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c295f6d93dd72aa3119241261cb4c968/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d7be78dfbd05da4d1ab54ed8dff211af/transformed/jetified-firebase-analytics-ktx-21.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/641cd34ed487993daf5825df29345294/transformed/jetified-firebase-common-ktx-20.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/69e09d43b9e368ad9667a5f883768369/transformed/jetified-firebase-database-20.0.5-api.jar</arg>
@@ -87,7 +89,6 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fe1a9908b6b74e7a450f22ff58bdb2e2/transformed/viewpager-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a52567c2c472844d57393d93fb1583aa/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fda00ceb41941d6510ce6ccddbe624a4/transformed/loader-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/cb498e9f80b5f60051764ec822a1dc0b/transformed/recyclerview-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/8161732ca44532e4070d29f0bf1c0001/transformed/slidingpanelayout-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/7d4b5354c0cf1e1817b3da7c645d935f/transformed/customview-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d0b225ed1471d54892d0b39b28117380/transformed/swiperefreshlayout-1.0.0-api.jar</arg>
@@ -96,7 +97,6 @@
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/49db322d8cbb73b042bbab93120f46be/transformed/cursoradapter-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/1a8dcdd3e0c98a055b947c9e24d3a5da/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9cb33c40b96a0a04cadb5215f69a3ffa/transformed/jetified-savedstate-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/391d049e93e291787be47d0df26a9ef6/transformed/cardview-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/523d8e21f59805fb1b8c8d60a51d988c/transformed/jetified-firebase-components-17.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ea5941afc2a450cc7360d5ecbed1756a/transformed/exifinterface-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d467c7960cb7c088d29c34122268d33d/transformed/jetified-dagger-android-2.20-api.jar</arg>
@@ -258,15 +258,17 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:core:1.4.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.6.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger-android-support:2.20@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.4.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-ktx:20.0.5@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.services:storage:1.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads:21.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-ktx:21.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common-ktx:20.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database:20.0.5@aar" level="project" />
@@ -311,7 +313,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
@@ -320,7 +321,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-components:17.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger-android:2.20@aar" level="project" />
