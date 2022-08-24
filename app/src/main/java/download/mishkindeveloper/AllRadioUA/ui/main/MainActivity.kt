@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         InterstitialAd.load(
             this,
-            "ca-app-pub-3940256099942544/1033173712",
+            "ca-app-pub-3971991853344828/7136755739",
             adRequest,
             interstitialAdLoadCallback
         )
@@ -171,9 +171,10 @@ class MainActivity : AppCompatActivity() {
         initPermission()
 
         initBroadcastManager()
-        setMediaInfoInMiniPlayer()
+
         setListeners()
         performSearch()
+        setMediaInfoInMiniPlayer()
         initAds()
 
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
