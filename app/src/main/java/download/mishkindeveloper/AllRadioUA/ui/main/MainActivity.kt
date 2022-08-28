@@ -162,19 +162,13 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        checkFirstStartStatus()
-
         init()
-
-
         initPermission()
-
+        checkFirstStartStatus()
         initBroadcastManager()
-
+        setMediaInfoInMiniPlayer()
         setListeners()
         performSearch()
-        setMediaInfoInMiniPlayer()
         initAds()
 
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
@@ -341,11 +335,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun setTitleMiniPlayer(id: Int) {
         val radioWave: RadioWave = viewModel.getRadioWaveForId(id)
-        titleTextView.text = radioWave.name
-        Picasso.get()
-            .load(radioWave.image)
-            .into(posterImageView)
-        preferencesHelper.setIdPlayMedia(radioWave.id)
+        if (radioWave != null) {
+            titleTextView.text = radioWave.name
+            Picasso.get()
+                .load(radioWave.image)
+                .into(posterImageView)
+            preferencesHelper.setIdPlayMedia(radioWave.id)
+        }
     }
 //подключаю подсчет станций
     fun createListFragment() {
