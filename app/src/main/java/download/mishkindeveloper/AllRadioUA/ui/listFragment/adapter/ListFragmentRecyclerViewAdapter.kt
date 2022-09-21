@@ -2,6 +2,7 @@ package download.mishkindeveloper.AllRadioUA.ui.listFragment.adapter
 
 import android.content.Context
 import android.text.TextUtils
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -93,8 +94,10 @@ class ListFragmentRecyclerViewAdapter(
             setMediaItem(position)
             menuItemIdListener.updateCountOpenItem(items[position].id)
             //holder.lottieAnimationView?.visibility = View.VISIBLE
+
         }
         radioWaveNameEquals(position, holder)
+        //Log.d("Mylog","запуск радиостанции")
     }
 
     fun clearItems(){
@@ -141,17 +144,20 @@ class ListFragmentRecyclerViewAdapter(
     private fun setMediaItem(position: Int) {
         val mediaItem: MediaItem = MediaItem.fromUri(items[position].url.toString())
         mService.getPlayer()!!.setMediaItem(mediaItem)
-        mService.getPlayer()!!.prepare()
-        mService.getPlayer()!!.play()
+       mService.getPlayer()!!.prepare()
+            mService.getPlayer()!!.play()
+
+        //mService.getPlayer()!!.play()
         mService.setRadioWave(items[position])
 
+        Log.d("Mylog","запуск радиостанции")
 
 
         notifyDataSetChanged()
 
-
+//if (mService.getPlayer()!!.isPlaying) Log.d("Mylog","радиостанция играет") else Log.d("Mylog","радиостанция не доступна")
     }
-
+//счетчик станций
     override fun getItemCount(): Int {
         return items.size
     }

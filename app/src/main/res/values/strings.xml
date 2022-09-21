@@ -59,6 +59,7 @@
 
     <string name="add_radio_station_message">Your station has been added to the list of radio stations!</string>
     <string name="del_radio_station_message">Your station has been removed from the list of radio stations!</string>
+    <string name="error_play_station">В даний момент, дана радіостанція недоступна!</string>
 
 
 </resources>

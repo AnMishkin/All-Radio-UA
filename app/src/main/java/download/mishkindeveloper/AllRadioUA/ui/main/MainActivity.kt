@@ -5,13 +5,16 @@ import android.animation.Animator
 import android.annotation.SuppressLint
 import android.content.*
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
+import android.view.Gravity
 import android.view.MotionEvent
 import android.view.View
 import android.widget.*
 import androidx.annotation.NonNull
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
@@ -26,8 +29,8 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.airbnb.lottie.LottieAnimationView
 import com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer
 import com.google.android.exoplayer2.*
-import com.google.android.exoplayer2.PlaybackException.ERROR_CODE_IO_FILE_NOT_FOUND
-import com.google.android.exoplayer2.PlaybackException.ERROR_CODE_IO_NETWORK_CONNECTION_FAILED
+import com.google.android.exoplayer2.ExoPlaybackException.*
+import com.google.android.exoplayer2.PlaybackException.*
 import com.google.android.exoplayer2.ui.PlayerControlView
 import com.google.android.exoplayer2.ui.PlayerNotificationManager
 import com.google.android.gms.ads.*
@@ -58,6 +61,10 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 import java.text.SimpleDateFormat
+import java.time.Clock
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.Period
 import java.util.*
 import javax.inject.Inject
 import kotlin.properties.Delegates
@@ -157,6 +164,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         viewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
@@ -171,6 +179,7 @@ class MainActivity : AppCompatActivity() {
         performSearch()
         initAds()
 
+        //checkDate()
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
     }
 
@@ -310,6 +319,8 @@ class MainActivity : AppCompatActivity() {
             mExoPlayer!!.pause()
         } else {
             mExoPlayer!!.play()
+
+            //if (mPlayerService!!.getPlayer()!!.isPlaying) Log.d("Mylog","радиостанция играет") else Log.d("Mylog","радиостанция не доступна")
             //motionLayout?.transitionToStart()
             //onTransitionStarted()
             //transitionListener
@@ -607,7 +618,7 @@ initAds()
                     MediaItem.fromUri(url!!)
                 mPlayerService?.getPlayer()?.setMediaItem(mediaItem)
                 mPlayerService?.setRadioWave(viewModel.getRadioWaveForId(id))
-
+//Log.d("Mylog","$url")
                // MotionEvent.ACTION_UP
 
             }
@@ -625,6 +636,7 @@ initAds()
             isPlayingMedia(mExoPlayer!!.isPlaying)
             setTrackInfo()
             mPlayerService?.getPlayer()?.addListener(playerListener)
+            //Log.d("Mylog","$mExoPlayer")
         }
 
         override fun onServiceDisconnected(className: ComponentName) {
@@ -737,6 +749,7 @@ initAds()
         }
 
         override fun onPlayerError(error: PlaybackException) {
+            val er = getString(R.string.error_play_station)
             when (error.errorCode) {
                 ERROR_CODE_IO_NETWORK_CONNECTION_FAILED -> {
                     animNetLottieAnimationView?.visibility = View.VISIBLE
@@ -747,12 +760,47 @@ initAds()
                         getString(R.string.error_payback),
                         Toast.LENGTH_SHORT
                     ).show()
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                ERROR_CODE_AUDIO_TRACK_INIT_FAILED -> {
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                ERROR_CODE_FAILED_RUNTIME_CHECK ->{
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                TYPE_REMOTE -> {
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                TYPE_RENDERER -> {
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                TYPE_SOURCE -> {
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                TYPE_UNEXPECTED -> {
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                }
+                else -> {
+                    Toast.makeText(
+                        this@MainActivity,
+                        er.toString(),
+                        Toast.LENGTH_LONG
+
+                    ).show()
+
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+
+
                 }
             }
-        }
+
+            }
+
+
 
         override fun onPlayerErrorChanged(error: PlaybackException?) {
             animNetLottieAnimationView?.visibility = View.INVISIBLE
+            //Log.d("Mylog","ОШИБКА ЗАПУСКА РАДИОСТАНЦИИ")
         }
     }
 
@@ -776,8 +824,10 @@ initAds()
             playImageView?.setImageResource(R.drawable.ic_baseline_pause_24)
 
             motionLayout?.transitionToEnd()
+            //Log.d("Mylog","открылся еквалайзер")
         } else {
             playImageView?.setImageResource(R.drawable.ic_baseline_play_arrow_24)
+            //Log.d("Mylog","НЕ!!!!  открылся еквалайзер")
         }
     }
 
@@ -930,4 +980,12 @@ initAds()
 
     fun setSettingListener(fragmentSettingListener: FragmentSettingListener) {
         this.fragmentSettingListener = fragmentSettingListener
-    }}
+    }
+    //проверка на 1й заход в день
+
+//    fun checkDate(){
+//        var date = LocalDateTime.now()
+//        //var period = Period.of(0, 0, 1)
+//        Log.d("Mylog","$date")
+//    }
+}

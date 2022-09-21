@@ -18,5 +18,5 @@ data class RadioWave(
     var custom:Boolean?,
     var countOpen:Int?
 ) : Serializable {
-    constructor() : this(null, null, null, null, null, false, false, 0)
+    constructor() : this(null, null, null, null, null, false, false, 1)
 }

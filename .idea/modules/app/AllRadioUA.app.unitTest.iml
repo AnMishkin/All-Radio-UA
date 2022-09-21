@@ -14,142 +14,142 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/877ce869b67bce6bde9dfcfac7015aa5/transformed/jetified-viewbinding-7.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b6d9dc7a6beea81bd406e414be2f4e6b/transformed/room-rxjava2-2.5.0-alpha02-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/758cd8f2b4c6125976aaafe0b49e65e8/transformed/room-guava-2.5.0-alpha02-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/64153afccb0c691853415db2fffdc072/transformed/room-testing-2.5.0-alpha02-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fc8ff1c61bfac0f0b13c2aa487468029/transformed/room-runtime-2.5.0-alpha02-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.room/room-common/2.5.0-alpha02/a863b0977eba29a5069d1301fee3cc72e6141a83/room-common-2.5.0-alpha02.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/685f8ebb7973f582c7a0a7ac90803499/transformed/jetified-lifecycle-viewmodel-ktx-2.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6a3674d18e25c98846548b7ed254052b/transformed/jetified-kotlinx-coroutines-android-1.5.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/49c59b46c552df68d2018dbf9762178b/transformed/jetified-lottie-3.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d93f396a57a23607b3f841d5c4bcd1f7/transformed/jetified-picasso-2.71828-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/5cbf9c805283ed6c6b2f8d1d111f1f88/transformed/jetified-okhttp-4.10.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/4f1523588cafba2b7f464e6c001f876f/transformed/jetified-okio-jvm-3.0.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f2ae01e53caa8b24fe35ddf216661311/transformed/jetified-kotlinx-coroutines-core-jvm-1.5.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2413d0e52122390097dbdf7708b21969/transformed/jetified-kotlin-stdlib-jdk8-1.6.21.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f5ecc93e0baa91aa065d9a0778fc8dc5/transformed/jetified-junit-4.13.2.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d5a9618544e53300659118423ac4aafc/transformed/jetified-hamcrest-core-1.3.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/4dcd6390b30572d6769324bbd2f4fdb8/transformed/material-1.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3010838ee4c5d35a18d2000d3602ee7a/transformed/jetified-dagger-android-support-2.20-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f75200e7e1c5936346c05f6cb07aa072/transformed/appcompat-1.4.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c295f6d93dd72aa3119241261cb4c968/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ebd3e2c416d978d95c33f27abc59005d/transformed/jetified-firebase-messaging-ktx-23.0.7-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/031b1b4f4b51db224f16abecae8d0162/transformed/jetified-play-services-ads-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d7be78dfbd05da4d1ab54ed8dff211af/transformed/jetified-firebase-analytics-ktx-21.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9f31fb4e771fc3db731b6adb785f06a2/transformed/jetified-firebase-database-ktx-20.0.5-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/641cd34ed487993daf5825df29345294/transformed/jetified-firebase-common-ktx-20.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/69e09d43b9e368ad9667a5f883768369/transformed/jetified-firebase-database-20.0.5-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/671d0ae9a357338289c2b4096a430e46/transformed/jetified-firebase-messaging-23.0.7-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/1855bf4fe53187671136442ad9f89281/transformed/jetified-firebase-core-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0ea93121056dd142819bb32f53916627/transformed/jetified-firebase-analytics-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2607a9202e43c2ad94533872d3275f06/transformed/jetified-play-services-measurement-api-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/de0959d72a94f9e63a30f128c2cb9a95/transformed/jetified-firebase-appcheck-interop-16.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3e35662b8bc57a31014b9558af6a8232/transformed/jetified-firebase-auth-interop-19.0.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/8eac336e66a0acb1e84305e190287ddf/transformed/jetified-firebase-installations-17.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b94df97e90887ed3626dcf12d930f218/transformed/jetified-firebase-datatransport-18.1.5-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f505ab0610e4979726dfc6c0a1ff5e65/transformed/jetified-firebase-common-20.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0f0e772c75617cc624f92b96af7db500/transformed/jetified-play-services-appset-16.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6722ea94d651679073dfcbf4a656f5db/transformed/jetified-firebase-database-collection-18.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/97a79dc1cfa9e85ed696f18daf1b1bd5/transformed/jetified-play-services-base-18.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dcd41846b0317a5857500ee153b7e655/transformed/jetified-play-services-cloud-messaging-17.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/460aad2f659674ddaaf190dc518499f6/transformed/jetified-firebase-iid-interop-17.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/aa87e2178e7ef4bbcd37a264fba86339/transformed/jetified-firebase-installations-interop-17.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0f422c1ce3c820422fe2dc5a097fc87a/transformed/jetified-play-services-tasks-18.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ab7e3c951f3054c693956e8628f17b5c/transformed/jetified-play-services-ads-lite-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a9b0cef0440f04cd6ee3b589e2256c39/transformed/jetified-play-services-ads-base-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b58f6009545b726e1206706b427b9ad4/transformed/jetified-play-services-measurement-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9e246178c36abffcca796794bd59e391/transformed/jetified-user-messaging-platform-2.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2285892adb19ccce207524224ef8a9c6/transformed/jetified-play-services-measurement-sdk-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/cbc2a97a865548b314ec3b6ddbdab50b/transformed/jetified-play-services-measurement-impl-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/51962e67c7d466701eb8e26a2eadb260/transformed/jetified-play-services-ads-identifier-18.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/7c3ff8eafc38a4290c91eaa54bc55249/transformed/jetified-play-services-stats-17.0.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/eed06a6c3e966a1489f4179fbca6bb2f/transformed/jetified-firebase-measurement-connector-19.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a32542f7f12a9647403b6d971d5e60f5/transformed/jetified-play-services-measurement-sdk-api-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0b56976e51e69cbe865d3210d842bb63/transformed/jetified-play-services-measurement-base-21.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/03d67a467ac15bfc8d535c5c39cd9aa1/transformed/jetified-play-services-basement-18.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/58a03f8d58d2b496ba341f6e1d6a40a6/transformed/fragment-1.3.6-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/07ece32c3b7d68f1fdd471107a670da7/transformed/dynamicanimation-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/a52567c2c472844d57393d93fb1583aa/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fda00ceb41941d6510ce6ccddbe624a4/transformed/loader-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/24d5a1ce90dc2eb67e5e1bfbfd2bf47e/transformed/work-runtime-2.7.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b22ebacd64a941311918cdfae5a7fa2d/transformed/lifecycle-livedata-2.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f677c2db7ffd41830095dbf80d9cee83/transformed/core-runtime-2.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2621d736bed7477ffacd5891523b4309/transformed/recyclerview-1.2.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/391d049e93e291787be47d0df26a9ef6/transformed/cardview-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dbcc75a26bfb80f3d5d7f0c4db7809f7/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/523d8e21f59805fb1b8c8d60a51d988c/transformed/jetified-firebase-components-17.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/995799bbbffac468daa501697b99a8e0/transformed/drawerlayout-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6995ce3e1c358bd013c10d4291df757f/transformed/coordinatorlayout-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fe1a9908b6b74e7a450f22ff58bdb2e2/transformed/viewpager-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/7d4b5354c0cf1e1817b3da7c645d935f/transformed/customview-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/11f0a0f748efa61c4dc671e78aac38e9/transformed/jetified-activity-1.2.4-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/dd91b97acdfa499856afcd1785deae70/transformed/jetified-appcompat-resources-1.4.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b4412061763ed7f59f28068100d60053/transformed/transition-1.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6f1699b96e4796de7890adf525228043/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/32f043aa10645f458faacca84e3e31ef/transformed/vectordrawable-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ebe2d0723ea9ec8d738f5e544d13f089/transformed/jetified-exoplayer-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3925c6e03a704465bfb2ff8299b42f11/transformed/jetified-exoplayer-ui-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3d3e90dec76a20a0c08bc0ad619e5b26/transformed/jetified-extension-mediasession-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/058e7741336732e2138fee22e5e24d31/transformed/media-1.4.3-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/26ed0e0abeac6b03f658cc9c7a2e60f9/transformed/browser-1.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/088cb7a98655e7ed8aeb6f5e6077423e/transformed/core-1.8.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/49db322d8cbb73b042bbab93120f46be/transformed/cursoradapter-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/1a8dcdd3e0c98a055b947c9e24d3a5da/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9cb33c40b96a0a04cadb5215f69a3ffa/transformed/jetified-savedstate-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c4f7e6d589757014c33734614b27e9dd/transformed/lifecycle-runtime-2.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ea5941afc2a450cc7360d5ecbed1756a/transformed/exifinterface-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/d467c7960cb7c088d29c34122268d33d/transformed/jetified-dagger-android-2.20-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6b7f1eeece9ee07b05706e1784e26e8b/transformed/sqlite-framework-2.3.0-alpha03-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b0735f25c46f66c104724358220ae7a1/transformed/sqlite-2.3.0-alpha03-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/44cdfae999248d7c3871121ca88ba3d8/transformed/lifecycle-viewmodel-2.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9704e77a975c8fb0c1af71d251c79541/transformed/versionedparcelable-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/67670276510d4c7d0f3680d5e73fb055/transformed/lifecycle-livedata-core-2.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.4.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.4.1.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/29d5199b1241a04af12ee9a6a508103c/transformed/jetified-transport-backend-cct-3.1.6-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3e61c3cb20a56665ffe9720cdce715fb/transformed/jetified-transport-runtime-3.1.6-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b026be8d8e63fefa77f206b161b604ec/transformed/jetified-firebase-encoders-json-18.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0668171d333839affa4d244067e8630e/transformed/jetified-firebase-encoders-proto-16.0.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/71ba8a27d4423f6df587384b4304a3ff/transformed/jetified-firebase-encoders-17.0.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b2a5f07752642ad45fe0e987e738821f/transformed/jetified-transport-api-3.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9fee490ec002fa892ce6ad014e2e3be2/transformed/interpolator-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/5d978ee1d27610f1dbb069386273e5a2/transformed/documentfile-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0d537cce6a7baacb646a95518b270d19/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b443180d391e23a6b0d8495b8e4bb37f/transformed/print-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/9bf51aee685e16255822a6ed4c22cfe7/transformed/jetified-kotlin-stdlib-jdk7-1.6.21.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6259c7f16c2a54a2e6dde28b259b77b3/transformed/jetified-kotlin-stdlib-1.6.21.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/34c6196c4d5b51619fb2082fcbcca135/transformed/jetified-kotlin-stdlib-common-1.6.21.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ce04ba33c3938a6ca02841e555053219/transformed/jetified-annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/androidx.room/room-migration/2.5.0-alpha02/cb59d68423e4a0ee8cca74116a57b12b5cdfccdd/room-migration-2.5.0-alpha02.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/e89b07229a4ef97694550674e78f3790/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b05e9c0471ddac4c3d0f92287b385f9b/transformed/jetified-exoplayer-core-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/3e31a1ab08a1bf70942123e473fb8705/transformed/jetified-exoplayer-common-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/abcb89c527cfb840c6a35e6ea0e061be/transformed/jetified-guava-31.0.1-android.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/403f78419e5ecbd534815bc168a4b67d/transformed/jetified-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2ea5f4596631fc580302332229ed4919/transformed/jetified-firebase-annotations-16.0.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6e5f3ab326caa7fe7189f83f75e6d016/transformed/jetified-dagger-2.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f000fa97631fc74dddaca7cea2c82244/transformed/jetified-javax.inject-1.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0e00c4c52589f4952d88b8f7cfa5314a/transformed/jetified-error_prone_annotations-2.9.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/c2da93971cffc9b98533da370e0d2c67/transformed/jetified-startup-runtime-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/2bb7375da3411649473a37fed797fbd9/transformed/constraintlayout-2.1.3-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/fd8c8b0155539b37864a0f2b9031a874/transformed/jetified-failureaccess-1.0.1.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/218f0c5e9df883ff166822556d0f81dc/transformed/jetified-exoplayer-database-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/6a9380a70aa155bc5e35730c24779250/transformed/jetified-exoplayer-datasource-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/0eb2ac6daa23956e73cec8906d42ff59/transformed/jetified-exoplayer-decoder-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f8f436e4cff529dcef60ae61aab934fc/transformed/jetified-exoplayer-extractor-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ab672002381babdd640da570d31a14b1/transformed/jetified-exoplayer-dash-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/ff522d1674e543899ebf8adeb79b5b4a/transformed/jetified-exoplayer-hls-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/420642a099d87beaf1ea3a0c013ab6c4/transformed/jetified-exoplayer-rtsp-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/91891137571c06e4eb15f09f16792a7a/transformed/jetified-exoplayer-smoothstreaming-2.18.0-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/f719bd14f8078843926d8514ea190537/transformed/jetified-audiovisualizer-0.9.2-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/b38cfcf788f9a6e4e69d7e029fb3f601/transformed/jetified-rxandroid-2.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/facfd836bb9b833cca50befcdc4d0734/transformed/jetified-rxjava-2.2.9.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/39d7d443cda6b8158944c5a96b7c44de/transformed/jetified-reactive-streams-1.0.2.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/transforms-3/be2edbcb0cef2c390f37c23e834cc944/transformed/jetified-circleimageview-3.1.0-api.jar</arg>
-                <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-32/android.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/5633e59ffc51eca578a317ab61495766/transformed/jetified-viewbinding-7.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8e9f4dcede0b04360ef6c0b21a831e03/transformed/room-rxjava2-2.5.0-alpha02-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b6366a59edde3b479bbeeb080a4d0f01/transformed/room-guava-2.5.0-alpha02-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/bad735471500d9eede3e05b9281c8c1a/transformed/room-testing-2.5.0-alpha02-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/558c6f2a5aa92a5387dbfe19e04cbbc6/transformed/room-runtime-2.5.0-alpha02-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.room/room-common/2.5.0-alpha02/a863b0977eba29a5069d1301fee3cc72e6141a83/room-common-2.5.0-alpha02.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d95b13bd06df58de34d01e57a5290547/transformed/jetified-lifecycle-viewmodel-ktx-2.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/df81ae7be573c5d88a3ab4796d8510aa/transformed/material-1.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/906d6b9746dd817f3c51ab8ae3da38c6/transformed/jetified-lottie-3.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f1bc741452489e01c2642da48c72ce12/transformed/jetified-dagger-android-support-2.20-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/62488e30f985c2fcc9c6e3d89b070d30/transformed/appcompat-1.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/3383be9a22d0f4d826eb9ea6f5c9372a/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/394317427bdfe3ce491edc953e00d82c/transformed/jetified-firebase-messaging-ktx-23.0.8-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6e70dc73049f684c19b253b8c9979d93/transformed/jetified-play-services-ads-21.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/31a705b6b5c616d94f2de63dbe3cfb90/transformed/jetified-firebase-analytics-ktx-21.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/c110f750335f8a74b502a8f5ee49cd5e/transformed/jetified-firebase-database-ktx-20.0.6-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8e5c4fb87232d9c5eef6f72ed64e60b2/transformed/jetified-firebase-common-ktx-20.1.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/ade97c3da4f7358493065c754635a510/transformed/jetified-firebase-database-20.0.6-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f3f81199b668faeda5e4b3b774a895ab/transformed/jetified-firebase-messaging-23.0.8-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d19e6ef291db576f2d731b5a8dfd3130/transformed/jetified-firebase-core-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/43d8676524f2f3db5cfc73120653baef/transformed/jetified-firebase-analytics-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/cf396d82c65d7047cc84a43ea946bd35/transformed/jetified-play-services-measurement-api-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8b9786e9fd2af950c1895b5bd53d5b81/transformed/jetified-firebase-appcheck-interop-16.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/505a1ace66226e044a25d7fdd11673d0/transformed/jetified-firebase-auth-interop-19.0.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b11ec36d0392ab964420300ed445a082/transformed/jetified-firebase-installations-17.0.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/ae3885596b362202636a58a846aee34c/transformed/jetified-firebase-datatransport-18.1.6-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8979ad4882a004973cb2c704cc6a8724/transformed/jetified-firebase-common-20.1.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1b323a103933c841ed7ade6e6ee72286/transformed/jetified-play-services-appset-16.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/282e6ccaff1375543eb2ff097d38a92f/transformed/jetified-firebase-database-collection-18.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/57a2c3a511c26bb8e1824903b1792990/transformed/jetified-play-services-base-18.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/fc04fa36cbb93680c7457556caa0bbca/transformed/jetified-play-services-cloud-messaging-17.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2ee8723921ceefa918aea9853aa6691c/transformed/jetified-firebase-iid-interop-17.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2b2fe96bb4ecfcf8c45eebebab8a319c/transformed/jetified-firebase-installations-interop-17.0.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/674d1b9b8eb73f5a7ac87aaaebcab3e8/transformed/jetified-play-services-tasks-18.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/c8417d6b1e9f22ad650b812b6b400c43/transformed/jetified-play-services-ads-lite-21.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1fcd49560e8e5ba68d0186cf62379ed8/transformed/jetified-play-services-ads-base-21.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/5486b1a0ff3590ec2d782446cc614e40/transformed/jetified-play-services-measurement-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6d157a9f1fbf4bbcfdbc0bf33f8dc68e/transformed/jetified-user-messaging-platform-2.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/21b5eeaf7e2bfb810edcc789ddf99bb6/transformed/jetified-play-services-measurement-sdk-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/94b4b6cbdc4b4af22188baaeae1621ff/transformed/jetified-play-services-measurement-impl-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6b347d396825e631a7be753c3db4efe8/transformed/jetified-play-services-ads-identifier-18.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/ee1d6a6834d826f3b7f795f7d5b8b85b/transformed/jetified-play-services-stats-17.0.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/c114da12dc7d96bc81c6651a915916dd/transformed/jetified-firebase-measurement-connector-19.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6f1edb57c361313767a4c9cfe2ee4627/transformed/jetified-play-services-measurement-sdk-api-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f8f5812522678e9ab655de303220a8ea/transformed/jetified-play-services-measurement-base-21.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/9eb87c052f24514e5e4dee41cdc7c67f/transformed/jetified-play-services-basement-18.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/3a313ed7149b2587850016209674c387/transformed/fragment-1.3.6-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1c9d5f13aa97df42055c0ca572e93df6/transformed/jetified-activity-1.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b3b6582de69c8ed70169136d43183272/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4da384b7b57a412834a78e38cbb1814d/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/7e7b9df5de775d1806b18a5b0952eb56/transformed/jetified-kotlinx-coroutines-android-1.6.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1eaa3b47a57930d68ce32b9d00464b3b/transformed/jetified-picasso-2.71828-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/deda85428544db4e1d8a91f576a0c013/transformed/jetified-okhttp-4.10.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/985d422acab1ee75e2176d5a67f42797/transformed/jetified-okio-jvm-3.0.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a457ef7c0f139b6f29869314ef6fbc4d/transformed/jetified-kotlin-stdlib-jdk8-1.6.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d62bd5ed67a36b37e56a4c0e1398b6ca/transformed/jetified-junit-4.13.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/31f75f264af1d129d1cb3d21fc846324/transformed/jetified-hamcrest-core-1.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a13dbd2ca6a44c8777b5fe07d8750ac2/transformed/dynamicanimation-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f4fbf33ac2210363adf360d9dbf6c73b/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2ea5c2a58abc92a79b7c962e33f47caf/transformed/loader-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/324646a840fadb391001c95305fdf87a/transformed/work-runtime-2.7.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4a991877a64e81ff95566b387992d9f1/transformed/lifecycle-livedata-2.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/415ea9b2e87994f4554081a9ef77420c/transformed/core-runtime-2.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/823870c0fad935b3ea366d60f9cfb96b/transformed/recyclerview-1.2.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/eee1496ae3f49f9c41df2752edf21c93/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4a3274c9df785ccd6684171b91a74904/transformed/jetified-core-ktx-1.9.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/dd01da8defee051fc2df2c8812aaf862/transformed/jetified-firebase-components-17.0.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/452fa8c80eb4b142a2f18bf4012f55a0/transformed/drawerlayout-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a3a4c24e3b11f00b8ec7d9310573a05b/transformed/coordinatorlayout-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/bfbcdf5a52c0c883861f52a02dd3dda3/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4af297cee4cf14845ff77f87ad762212/transformed/customview-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/92042c5fe48734d75aba95bc06da8fba/transformed/jetified-appcompat-resources-1.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/764a47ae05ae717c03eb1b2863cb372d/transformed/transition-1.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/15f4cd234343c0551b77aa22334d6c82/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6938f4b7348004fb0fc3b743de1fe2db/transformed/vectordrawable-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/324769b6ebfbd9f88b25d648016b9b1b/transformed/jetified-exoplayer-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/5c3168c86d756357aafe6643081adaf0/transformed/jetified-exoplayer-ui-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b886dc546f47b584ae8feb17467c2b88/transformed/jetified-extension-mediasession-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/474f3c18899790c09c5c7810e73915af/transformed/media-1.4.3-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/0b974eef1a76c5e98bfe40a059ad693f/transformed/browser-1.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/55be95e5c486cc26a2ad6f2fd6fd7ea8/transformed/core-1.9.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2a3325bc4f8e76aeee45b31fad586124/transformed/cursoradapter-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f7edf653b1a25e735dd7254172d3e17d/transformed/jetified-savedstate-1.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b5a4b3bb593f638ec0f64c84b77a5806/transformed/lifecycle-runtime-2.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/9e1adb4631e30ac975c7054be2ce69dc/transformed/exifinterface-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a532e2273fb0539d11fc8f11088a5246/transformed/jetified-dagger-android-2.20-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8258ab4a6ba8cb096ee8030587220c0c/transformed/sqlite-framework-2.3.0-alpha03-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/ba3e222f8132d396e050369bc88efd50/transformed/sqlite-2.3.0-alpha03-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/849ba1b7e85b88ec6ff0bc8f057dcd21/transformed/lifecycle-viewmodel-2.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/011bd0142ceb62759611aeb2015a3877/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/fd15ce484022097c136f4a9b5b3192b0/transformed/lifecycle-livedata-core-2.5.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8ff2dd02178ef973ec7b6633134c2085/transformed/jetified-transport-backend-cct-3.1.7-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/365822273474510cf726332f531b4675/transformed/jetified-transport-runtime-3.1.7-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1540c66fcc24c5ad97e2dd6e9fe446ec/transformed/jetified-firebase-encoders-json-18.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/fc9667938e96479822cf904eac55a56d/transformed/jetified-firebase-encoders-proto-16.0.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/0ec80c7ec39691b5ea925194a44092e2/transformed/jetified-firebase-encoders-17.0.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/80d9fff3944e5c80ce04dd2cd6b9112d/transformed/jetified-transport-api-3.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/5c487525b0bf08d1ac5a71ebfce0e682/transformed/interpolator-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/b8cd91090264e4ab19b8ad62ff60b91e/transformed/documentfile-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1f0b04ad158019c436eca899bce8a4df/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/9706a19dd2150b7049d56a415621fa2e/transformed/print-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/07da371959f39cbbb487347d7a6824a1/transformed/jetified-kotlin-stdlib-jdk7-1.6.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d951a7dfe9091181ff996baf2adda080/transformed/jetified-annotation-experimental-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/82b3d01ab48157155fc17ce079394828/transformed/jetified-kotlin-stdlib-1.7.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/35249189d9e40e8e4eae445db90b8703/transformed/jetified-kotlin-stdlib-common-1.7.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/e99c767119c12155e2f104d45eed82d5/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.room/room-migration/2.5.0-alpha02/cb59d68423e4a0ee8cca74116a57b12b5cdfccdd/room-migration-2.5.0-alpha02.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/ee64b50de39058c05f7d3842a98617af/transformed/jetified-exoplayer-core-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d32911397824695ee0736c99e08a4ec2/transformed/jetified-exoplayer-common-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2d6ba5febc6358b29331e7aaafefd470/transformed/jetified-guava-31.0.1-android.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/bb4a3826e0867bdb4f6eca761b45a5d5/transformed/jetified-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/3f571e261d4b6f4e57d98556b41bcdff/transformed/jetified-error_prone_annotations-2.9.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/95abf06b94886fa37b0650769b352a96/transformed/jetified-firebase-annotations-16.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a1672512a123c20cfc56c91a0ec933a7/transformed/jetified-dagger-2.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/030b5f69936c18b44a8c37e9dfccefbd/transformed/jetified-javax.inject-1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f0ef34f1161b7aca444e6589ef2073da/transformed/jetified-startup-runtime-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/11e3f026d1f0731aaf7dccd0cffdb128/transformed/constraintlayout-2.1.3-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/7ecc128c2156cc086b573be87b0231c6/transformed/jetified-failureaccess-1.0.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a95198b29df769e591202e4d420e5d66/transformed/jetified-exoplayer-database-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/72e3d5a84eadd404c033e87787d437fd/transformed/jetified-exoplayer-datasource-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1bb497420eacd51dbd74578f7a997e17/transformed/jetified-exoplayer-decoder-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1116de23f2511e685c757d125bd15666/transformed/jetified-exoplayer-extractor-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/227f9469d0c59a9fb67beeb2fb7bb042/transformed/jetified-exoplayer-dash-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/bd67c2bb4c8a111cdb24558dd354c545/transformed/jetified-exoplayer-hls-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/fc1864b616352e2437893cdd1d3c5f05/transformed/jetified-exoplayer-rtsp-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/e2ea441235c3aad1f54c949b36db6e2a/transformed/jetified-exoplayer-smoothstreaming-2.18.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4bf2c1a7ff872b154581bd668de7b133/transformed/jetified-audiovisualizer-0.9.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/01cbde70b594609e69f817b09ecc61a7/transformed/jetified-rxandroid-2.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/66dee42c274cdde4eb046efc170ea879/transformed/jetified-rxjava-2.2.9.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a60a77b405f29b6190edd336d47eb85c/transformed/jetified-reactive-streams-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/f783b05d4487230871c48e8321ededca/transformed/jetified-circleimageview-3.1.0-api.jar</arg>
+                <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-33/android.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
             </stringArg>
@@ -170,15 +170,15 @@
             </arrayArg>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.6.20/18f66cca4301c12893ebe4ef47d65c3d9d2bff9b/kotlin-compiler-embeddable-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.20/669965154723f1a712e8677af0cc5470dfdab81c/kotlin-reflect-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.20/6cedc143badbb4f1c6b7f5a340b04edff1743208/kotlin-stdlib-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.20/27b4562b6713d70f458c6d7ea39aadacb8e6a92b/kotlin-stdlib-common-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.20/a115c367e0fd9c8909293b208689afca0c88a6f1/kotlin-script-runtime-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.6.20/d4cac343029f48f106c57f457384771165d7deb5/kotlin-daemon-embeddable-1.6.20.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
-                <arg>$USER_HOME$/.jdks/liberica-1.8.0_333/jre/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.6.20/18f66cca4301c12893ebe4ef47d65c3d9d2bff9b/kotlin-compiler-embeddable-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.20/669965154723f1a712e8677af0cc5470dfdab81c/kotlin-reflect-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.20/6cedc143badbb4f1c6b7f5a340b04edff1743208/kotlin-stdlib-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.20/27b4562b6713d70f458c6d7ea39aadacb8e6a92b/kotlin-stdlib-common-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.20/a115c367e0fd9c8909293b208689afca0c88a6f1/kotlin-script-runtime-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.6.20/d4cac343029f48f106c57f457384771165d7deb5/kotlin-daemon-embeddable-1.6.20.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginOptions" />
@@ -212,34 +212,34 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../app/src/testDebug" />
-    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="AllRadioUA.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-common:2.5.0-alpha02" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.10.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-jvm:3.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.4.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders-proto:16.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders:17.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-migration:2.5.0-alpha02" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:31.0.1-android" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.errorprone:error_prone_annotations:2.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-annotations:16.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger:2.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.errorprone:error_prone_annotations:2.9.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.reactivex.rxjava2:rxjava:2.2.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.reactivestreams:reactive-streams:1.0.2" level="project" />
@@ -249,47 +249,49 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-testing:2.5.0-alpha02@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-runtime:2.5.0-alpha02@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.6.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:3.4.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.6.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger-android-support:2.20@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.4.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.5.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging-ktx:23.0.7@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads:21.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging-ktx:23.0.8@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads:21.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-ktx:21.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-ktx:20.0.5@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common-ktx:20.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database:20.0.5@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging:23.0.7@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-core:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-api:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-ktx:20.0.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common-ktx:20.1.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database:20.0.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging:23.0.8@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-core:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-api:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations:17.0.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-datatransport:18.1.5@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common:20.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations:17.0.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-datatransport:18.1.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common:20.1.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-appset:16.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-collection:18.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-base:18.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-cloud-messaging:17.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-iid-interop:17.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:18.0.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-lite:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-base:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement:21.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-lite:21.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-base:21.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement:21.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.ump:user-messaging-platform:2.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-impl:21.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-impl:21.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-identifier:18.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-stats:17.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-base:21.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:18.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-base:21.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:18.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.3.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity:1.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
@@ -298,55 +300,53 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-components:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.9.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-components:17.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity:1.2.4@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.4.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.5.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.transition:transition:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:extension-mediasession:2.18.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:extension-mediasession:2.18.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.media:media:1.4.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.browser:browser:1.4.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.8.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.9.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger-android:2.20@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.sqlite:sqlite-framework:2.3.0-alpha03@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.sqlite:sqlite:2.3.0-alpha03@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.4.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.4.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-backend-cct:3.1.6@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-runtime:3.1.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-backend-cct:3.1.7@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-runtime:3.1.7@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders-json:18.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-api:3.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-core:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-common:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.startup:startup-runtime:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.3.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-core:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-common:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.startup:startup-runtime:1.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.3@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-database:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-datasource:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-decoder:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-rtsp:2.18.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-database:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-datasource:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-decoder:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-rtsp:2.18.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.gauravk.audiovisualizer:audiovisualizer:0.9.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.reactivex.rxjava2:rxandroid:2.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />

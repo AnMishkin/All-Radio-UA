@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Все Радіо України</string>
+    <string name="app_name">All Radio UA</string>
     <string name="error_network">Немає доступу до інтернету</string>
     <string name="dev_name">Developed by Mishkin</string>
     <string name="name_station">Назва станції</string>
@@ -38,10 +38,11 @@
 
     <string name="empty_edit_text">Введіть назву станції або посилання</string>
     <string name="no_match">Збігів не знайдено</string>
-    <string name="app_widget_description">Все радіо України</string>
+    <string name="app_widget_description">All Radio UA</string>
     <string name="title_widget">Радіо</string>
     <string name="sub_title_widget">Трек</string>
 
     <string name="add_radio_station_message">Ваша станція додана до списку радіостанцій!</string>
     <string name="del_radio_station_message">Вашу станцію видалено зі списку радіостанцій!</string>
+    <string name="error_play_station">В даний момент, дана радіостанція недоступна!</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Все Радіо України</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">All Radio UA</string>
     <string name="error_network">Нет доступа к интернету</string>
     <string name="dev_name">Developed by Mishkin</string>
     <string name="name_station">Название станции</string>
@@ -39,8 +39,9 @@
     <string name="no_match">Совпадений не найдено</string>
     <string name="title_widget">Радио</string>
     <string name="sub_title_widget">Трек</string>
-    <string name="app_widget_description">Все радіо України</string>
+    <string name="app_widget_description">All Radio UA</string>
 
     <string name="add_radio_station_message">Ваша станция добавлена в список радиостанций!</string>
     <string name="del_radio_station_message">Ваша станция удалена из списка радиостанций!</string>
+    <string name="error_play_station">В данный момент,данная радиостанция недоступна!</string>
 </resources>
