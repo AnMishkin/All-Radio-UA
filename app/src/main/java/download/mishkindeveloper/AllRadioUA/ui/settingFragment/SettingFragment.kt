@@ -101,7 +101,9 @@ class SettingFragment : Fragment() {
     private fun updateDbAndAnim() {
         updateLottieAnimView?.playAnimation()
         (activity as MainActivity?)?.createListFragment()
-        (activity as MainActivity?)?.updateDb()
+        //убрал
+        //(activity as MainActivity?)?.updateDb()
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

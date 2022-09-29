@@ -38,7 +38,7 @@
     <string name="list_rb">List</string>
     <string name="grid_rb">Grid</string>
     <string name="view_tv">Display</string>
-    <string name="list_menu_item">Stations</string>
+    <string name="list_menu_item">Radio stations</string>
     <string name="fav_menu_item">Favorites</string>
     <string name="set_menu_item">Settings</string>
     <string name="history_menu_item">Story</string>

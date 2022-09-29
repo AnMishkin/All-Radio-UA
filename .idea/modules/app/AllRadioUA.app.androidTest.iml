@@ -22,6 +22,8 @@
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/modules-2/files-2.1/androidx.room/room-common/2.5.0-alpha02/a863b0977eba29a5069d1301fee3cc72e6141a83/room-common-2.5.0-alpha02.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/906d6b9746dd817f3c51ab8ae3da38c6/transformed/jetified-lottie-3.4.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1eaa3b47a57930d68ce32b9d00464b3b/transformed/jetified-picasso-2.71828-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/321aef9498bcf867b6b376f19bba4381/transformed/jetified-okhttp-urlconnection-4.2.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6b3b2a2e02a9fb0f3c6484db17352b71/transformed/jetified-logging-interceptor-4.2.1.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/deda85428544db4e1d8a91f576a0c013/transformed/jetified-okhttp-4.10.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/985d422acab1ee75e2176d5a67f42797/transformed/jetified-okio-jvm-3.0.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/d95b13bd06df58de34d01e57a5290547/transformed/jetified-lifecycle-viewmodel-ktx-2.4.1-api.jar</arg>
@@ -229,6 +231,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="AllRadioUA.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-common:2.5.0-alpha02" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp-urlconnection:4.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:logging-interceptor:4.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.10.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-jvm:3.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />

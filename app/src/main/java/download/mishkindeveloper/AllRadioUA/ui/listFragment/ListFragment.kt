@@ -3,6 +3,8 @@ package download.mishkindeveloper.AllRadioUA.ui.listFragment
 import android.content.*
 import android.os.Bundle
 import android.os.IBinder
+import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -49,6 +51,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
     private  var sortNameRadioGroup: RadioGroup?=null
     private  var hideBottomSheetImageButton: ImageButton?=null
     private  var titleSortTextView: TextView?=null
+    private var titleToolTextView : TextView?=null
     private var checkStateSwitch: Boolean = false
 
     @Inject
@@ -102,6 +105,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         bottomSheet = view.findViewById(R.id.bottomSheet)
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet!!)
         titleSortTextView = view.findViewById(R.id.titleSortTextView)
+        titleToolTextView = view.findViewById(R.id.titleToolTextView)
     }
 //попытка обновления базы при выборе сортировки
 
@@ -162,7 +166,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             updateRecyclerView(defaultListItem)
         } else {
             preferencesHelper.setSwitchEnabled(false)
-            defaultListItem = viewModel.getCustomAll()+viewModel.getAllRadioWaves()
+            defaultListItem = viewModel.getAllRadioWaves()
             updateRecyclerView(defaultListItem)
         }
     }
@@ -342,13 +346,24 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             builder.dismiss()
             initAdapter()
             //defaultListItem = viewModel.getCustomAll()+viewModel.getAllRadioWaves()
+            //Log.d("Mylog","удалили станцию")
+
         }
     }
 
     private fun delButtonEvent(radioWave: RadioWave, builder: AlertDialog) {
         viewModel.deleteRadioWave(radioWave)
+//        items?.size?.minus(2)
+//        var itemSizeAdd=items?.size?.minus(2)
+//        titleToolTextView?.text = "$itemSizeAdd"
+//        Log.d("Mylog","items колличество станций - ${itemSizeAdd}")
+
+
         builder.dismiss()
         initAdapter()
+//        MainActivity().createListFragment()
+       // Log.d("Mylog","удалили станцию")
+
     }
 
     private fun initListenersAlertDialog(
@@ -358,6 +373,8 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         updateButton.setOnClickListener {
             updateButtonEvent(nameEditText, radioWave, urlEditText, builder)
             switchIsChecked()
+
+
             //(activity as MainActivity?)?.updateDb()
            // defaultListItem = viewModel.getCustomAll()+viewModel.getAllRadioWaves()
         }
@@ -365,9 +382,19 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         delButton.setOnClickListener {
             delButtonEvent(radioWave, builder)
             switchIsChecked()
-            (activity as MainActivity?)?.updateDb()
 
-            Toast.makeText(this.context, R.string.del_radio_station_message, Toast.LENGTH_LONG).show()
+//счетчик станций
+//var CountStations = view?.findViewById<TextView>(R.id.titleToolTextView)
+//            var itemSizeAdd = items?.size?.minus(1)
+//
+//            CountStations?.text = "${itemSizeAdd}-${getString(R.string.list_menu_item)}"
+
+update()
+            var toast = Toast.makeText(this.context, R.string.del_radio_station_message, Toast.LENGTH_LONG)
+            ((toast.view as LinearLayout?)!!.getChildAt(0) as TextView).gravity =
+                Gravity.CENTER_HORIZONTAL
+            toast.show()
+            //Log.d("Mylog","удалили станцию")
         }
     }
 

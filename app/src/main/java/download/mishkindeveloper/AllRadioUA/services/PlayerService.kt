@@ -349,6 +349,7 @@ class PlayerService() : Service(), Parcelable {
             val request: Request = Request.Builder().url(url).build()
             okHttpClient.newCall(request).enqueue(object : Callback {
                 override fun onFailure(call: Call, e: IOException) {
+                    Log.d("Mylog", "Error parsing data ")
                 }
 
                 @SuppressLint("SimpleDateFormat")
@@ -358,8 +359,10 @@ class PlayerService() : Service(), Parcelable {
                     try {
                         jsonArray = json!!.getJSONArray("artists")
                         insertTrackAndLoadPoster(mediaMetadata, jsonArray)
+                        Log.d("Mylog", "Error parsing data $json")
                     } catch (e: java.lang.Exception) {
                         insertTrackAndSetDefaultPoster(mediaMetadata)
+                        Log.d("Mylog", "Error parsing data $json")
                     }
                 }
             })

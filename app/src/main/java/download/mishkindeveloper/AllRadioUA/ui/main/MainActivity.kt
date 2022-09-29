@@ -30,9 +30,7 @@ import com.airbnb.lottie.LottieAnimationView
 import com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer
 import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.ExoPlaybackException.*
-import com.google.android.exoplayer2.PlaybackException.*
 import com.google.android.exoplayer2.ui.PlayerControlView
-import com.google.android.exoplayer2.ui.PlayerNotificationManager
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
@@ -46,8 +44,6 @@ import de.hdodenhof.circleimageview.CircleImageView
 import download.mishkindeveloper.AllRadioUA.R
 import download.mishkindeveloper.AllRadioUA.data.entity.RadioWave
 import download.mishkindeveloper.AllRadioUA.data.entity.Track
-import download.mishkindeveloper.AllRadioUA.data.repository.RadioWaveRepository
-import download.mishkindeveloper.AllRadioUA.databinding.CustomPlayerViewBinding
 import download.mishkindeveloper.AllRadioUA.helper.PreferenceHelper
 import download.mishkindeveloper.AllRadioUA.listeners.FragmentSettingListener
 import download.mishkindeveloper.AllRadioUA.services.PlayerService
@@ -61,16 +57,13 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 import java.text.SimpleDateFormat
-import java.time.Clock
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.Period
 import java.util.*
 import javax.inject.Inject
 import kotlin.properties.Delegates
 
 
 class MainActivity : AppCompatActivity() {
+
     private var mExoPlayer: ExoPlayer? = null
     private var mPlayerService: PlayerService? = null
     private  var mPlayerView: PlayerControlView? = null
@@ -99,6 +92,8 @@ class MainActivity : AppCompatActivity() {
     private var trackInfoMiniPlayerTextView: TextView? = null
     private var artistPoster = ""
     private var fragmentSettingListener: FragmentSettingListener? = null
+    var itemSizeAdd by Delegates.notNull<Int>()
+    var radiostationSize = ""
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -107,6 +102,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var viewModel: MainViewModel
 
     @Inject
+
     lateinit var preferencesHelper: PreferenceHelper
     private lateinit var titleTextView: TextView
     private lateinit var posterImageView: ImageView
@@ -179,7 +175,7 @@ class MainActivity : AppCompatActivity() {
         performSearch()
         initAds()
 
-        //checkDate()
+//updateDb()
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
     }
 
@@ -201,15 +197,18 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         registerReceiver(timerBroadcastReceiver, IntentFilter(getString(R.string.intent_filter)))
+
         mAdView.resume()
     }
 
     override fun onPause() {
         super.onPause()
+        //motionLayout?.transitionToEnd()
         unregisterReceiver(timerBroadcastReceiver)
     }
 
     override fun onStop() {
+        motionLayout?.transitionToEnd()
         try {
             unregisterReceiver(timerBroadcastReceiver)
         } catch (e: java.lang.Exception) {
@@ -222,9 +221,10 @@ class MainActivity : AppCompatActivity() {
         firstStartStatus = preferencesHelper.getFirstStart()
         if (firstStartStatus) {
             initDb()
-
+            updateDb()
 
         } else {
+            updateDb()
             startPlayerService()
         }
     }
@@ -286,7 +286,9 @@ class MainActivity : AppCompatActivity() {
             timerTextView?.visibility = View.VISIBLE
             createTimerAlertDialog()
         }
-        addImageButton?.setOnClickListener { createInsertAlertDialog() }
+        addImageButton?.setOnClickListener {
+            createInsertAlertDialog()
+        }
         backImageButton?.setOnClickListener { motionLayout?.transitionToStart() }
 
         lottieAnimationView?.addAnimatorListener(lottieAnimationListener)
@@ -320,16 +322,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             mExoPlayer!!.play()
 
-            //if (mPlayerService!!.getPlayer()!!.isPlaying) Log.d("Mylog","радиостанция играет") else Log.d("Mylog","радиостанция не доступна")
-            //motionLayout?.transitionToStart()
-            //onTransitionStarted()
-            //transitionListener
-            //setMediaSessionAndVisual()
-            //MotionEvent.ACTION_UP
-            //mVisualizer?.setAudioSessionId(audioSessionId)
-            //motionLayout?.transitionToStart()
-            //mVisualizer?.release()
-
         }
     }
 
@@ -347,7 +339,7 @@ class MainActivity : AppCompatActivity() {
     private fun setTitleMiniPlayer(id: Int) {
         val radioWave: RadioWave = viewModel.getRadioWaveForId(id)
         if (radioWave != null) {
-            Log.d("Mylog","радио-$radioWave")
+            //Log.d("Mylog","радио-$radioWave")
             titleTextView.text = radioWave.name
             Picasso.get()
                 .load(radioWave.image)
@@ -363,10 +355,9 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     searchImageButton.visibility = View.VISIBLE
-    titleToolTextView?.text = getString(R.string.list_menu_item)
-    //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
-initAds()
-    Log.d("Mylog","создается список станций")
+    //счетчик станций
+    //titleToolTextView?.text = "${items.size}-${getString(R.string.list_menu_item)}"
+    initAds()
     }
 
     private fun createSettingFragment() {
@@ -379,7 +370,6 @@ initAds()
         transaction.commit()
         titleToolTextView?.text = getString(R.string.set_menu_item)
         initAds()
-
     }
 
     private fun createHistoryFragment() {
@@ -409,30 +399,29 @@ initAds()
     private var bottomNavViewOnItemSelectListener = NavigationBarView.OnItemSelectedListener {
         when (it.itemId) {
             R.id.listFragmentItem -> {
+               updateDb()
                 createListFragment()
-                loadPageAds()
                 searchImageButton.visibility = View.VISIBLE
-                //обновление базы
-                updateDb()
+                //loadPageAds()
+                //updateDbWithoutStationSize()
             }
             R.id.favoriteFragmentItem -> {
                 updateDb()
                 createFavFragment()
-                loadPageAds()
                 searchImageButton.visibility = View.INVISIBLE
-
+                loadPageAds()
             }
             R.id.settingFragmentItem -> {
+               // updateDb()
                 createSettingFragment()
-                loadPageAds()
                 searchImageButton.visibility = View.INVISIBLE
-
+                loadPageAds()
             }
             R.id.historyFragmentItem -> {
+                updateDb()
                 createHistoryFragment()
-
-                loadPageAds()
                 searchImageButton.visibility = View.INVISIBLE
+                loadPageAds()
             }
         }
         return@OnItemSelectedListener true
@@ -472,8 +461,12 @@ initAds()
         override fun onTransitionCompleted(p0: MotionLayout?, currentId: Int) {
             setParamMediaIfScrollMiniPlayer()
             checkButtonPlayInMiniPlayer()
-            if (mPlayerService == null) return
-            setMediaSessionAndVisual()
+            if (mPlayerService == null)   return
+            if (mExoPlayer!!.isPlaying){
+            //удалил
+            setMediaSessionAndVisual()} else
+            Log.d("Mylog","ошибка 467 строка")
+
         }
 
         override fun onTransitionTrigger(
@@ -536,7 +529,9 @@ initAds()
         animNetLottieAnimationView = findViewById(R.id.netAnim)
         backImageButton = findViewById(R.id.backImageButton)
         titleToolTextView = findViewById(R.id.titleToolTextView)
-       // titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
+
+        //счетчик станций
+        //titleToolTextView?.text = radiostationSize.toString()
         titleToolTextView?.text = getString(R.string.list_menu_item)
 
         searchView = findViewById(R.id.radio_search)
@@ -572,42 +567,52 @@ initAds()
                 for (dataSnapshot in snapshot.children) {
                     val radioWave: RadioWave? = dataSnapshot.getValue(RadioWave::class.java)
                     items.add(radioWave!!)
-                }
 
+                    //счетчик станций
+//                       radiostationSize = "${items.size}-${getString(R.string.list_menu_item)}"
+//                    titleToolTextView?.text = radiostationSize
+//                        Log.d("Mylog","инит базы - $items")
+//                    Log.d("Mylog","инит базы - $radiostationSize")
+                }
 
                 viewModel.createListRadioWave(items)
                 startPlayerService()
                 createListFragment()
                 preferencesHelper.setFirstStart(false)
-                preferencesHelper.setIdPlayMedia(items[1].id)
+                preferencesHelper.setIdPlayMedia(items[2].id)
 
             }
 
             override fun onCancelled(@NonNull @NotNull error: DatabaseError) {}
         }
         database?.addValueEventListener(valueEventListener)
-
     }
 
     fun updateDb() {
+        Log.d("Mylog","начало обновления базы - ${items.size}")
         database =
             FirebaseDatabase.getInstance(getString(R.string.firebase_url))
                 .getReference(getString(R.string.firebase_ref))
-        val valueEventListener: ValueEventListener = object : ValueEventListener {
+        var valueEventListener: ValueEventListener = object : ValueEventListener {
             override fun onDataChange(@NonNull @NotNull snapshot: DataSnapshot) {
                 for (dataSnapshot in snapshot.children) {
-                    val radioWave: RadioWave? = dataSnapshot.getValue(RadioWave::class.java)
+                    var radioWave: RadioWave? = dataSnapshot.getValue(RadioWave::class.java)
                     items.add(radioWave!!)
+
                 }
                 viewModel.createListRadioWave(items)
                 preferencesHelper.setFirstStart(false)
+                Log.d("Mylog","после создания списка радиростанций - ${items.size}")
+
+                //счетчик станций
+                //titleToolTextView?.text = "${items.size}-${getString(R.string.list_menu_item)}"
             }
 
             override fun onCancelled(@NonNull @NotNull error: DatabaseError) {}
         }
         database?.addValueEventListener(valueEventListener)
+        Log.d("Mylog","конец обновления базы - ${items.size}")
     }
-
     private fun setMediaItem() {
         val id = preferencesHelper.getIdPlayMedia()
         val url: String?
@@ -618,8 +623,6 @@ initAds()
                     MediaItem.fromUri(url!!)
                 mPlayerService?.getPlayer()?.setMediaItem(mediaItem)
                 mPlayerService?.setRadioWave(viewModel.getRadioWaveForId(id))
-//Log.d("Mylog","$url")
-               // MotionEvent.ACTION_UP
 
             }
         } catch (e: NullPointerException) {
@@ -760,33 +763,39 @@ initAds()
                         getString(R.string.error_payback),
                         Toast.LENGTH_SHORT
                     ).show()
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА аудиофайл не найден")
                 }
                 ERROR_CODE_AUDIO_TRACK_INIT_FAILED -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА инициализация аудиотрека")
                 }
                 ERROR_CODE_FAILED_RUNTIME_CHECK ->{
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА время ожидания")
                 }
                 TYPE_REMOTE -> {
                     Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
                 }
                 TYPE_RENDERER -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА рендера")
                 }
                 TYPE_SOURCE -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ресурса")
                 }
                 TYPE_UNEXPECTED -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА формата")
                 }
                 else -> {
-                    Toast.makeText(
+                   var toast = Toast.makeText(
                         this@MainActivity,
-                        er.toString(),
+                        er,
                         Toast.LENGTH_LONG
 
-                    ).show()
+                    )
+                    //toast?.setGravity(Gravity.TOP,0,0)
+                    //toast.setMargin(10F, 0F)
+                    ((toast.view as LinearLayout?)!!.getChildAt(0) as TextView).gravity =
+                        Gravity.CENTER_HORIZONTAL
+                    toast.show()
+
 
                     Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
 
@@ -800,7 +809,7 @@ initAds()
 
         override fun onPlayerErrorChanged(error: PlaybackException?) {
             animNetLottieAnimationView?.visibility = View.INVISIBLE
-            //Log.d("Mylog","ОШИБКА ЗАПУСКА РАДИОСТАНЦИИ")
+            Log.d("Mylog","ОШИБКА ЗАПУСКА РАДИОСТАНЦИИ")
         }
     }
 
@@ -949,8 +958,14 @@ initAds()
         saveButton.setOnClickListener {
             insertRadioWave(nameEditText, urlEditText, builder)
             createListFragment()
-
-            Toast.makeText(this, R.string.add_radio_station_message, Toast.LENGTH_LONG).show()
+            //счетчик станций
+            //изменение счетчика радиостаций при добавлении своей радиостанции
+//            itemSizeAdd = items.size+1
+//            titleToolTextView?.text = "${itemSizeAdd}-${getString(R.string.list_menu_item)}"
+            var toast = Toast.makeText(this, R.string.add_radio_station_message, Toast.LENGTH_LONG)
+            ((toast.view as LinearLayout?)!!.getChildAt(0) as TextView).gravity =
+                Gravity.CENTER_HORIZONTAL
+            toast.show()
         }
         builder.setView(view)
         builder.setCanceledOnTouchOutside(true)

@@ -65,6 +65,8 @@
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/4da384b7b57a412834a78e38cbb1814d/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.1.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/7e7b9df5de775d1806b18a5b0952eb56/transformed/jetified-kotlinx-coroutines-android-1.6.1.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1eaa3b47a57930d68ce32b9d00464b3b/transformed/jetified-picasso-2.71828-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/321aef9498bcf867b6b376f19bba4381/transformed/jetified-okhttp-urlconnection-4.2.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6b3b2a2e02a9fb0f3c6484db17352b71/transformed/jetified-logging-interceptor-4.2.1.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/deda85428544db4e1d8a91f576a0c013/transformed/jetified-okhttp-4.10.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/985d422acab1ee75e2176d5a67f42797/transformed/jetified-okio-jvm-3.0.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/a457ef7c0f139b6f29869314ef6fbc4d/transformed/jetified-kotlin-stdlib-jdk8-1.6.21.jar</arg>
@@ -224,6 +226,8 @@
     <orderEntry type="library" name="Gradle: androidx.room:room-common:2.5.0-alpha02" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp-urlconnection:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:logging-interceptor:4.2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:4.10.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio-jvm:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" level="project" />
