@@ -344,7 +344,7 @@ class PlayerService() : Service(), Parcelable {
         private fun posterRequestOkhttp(mediaMetadata: MediaMetadata) {
             val artist = mediaMetadata.title.toString().split("-")
             val url =
-                "https://www.theaudiodb.com/api/v1/json/2/search.php?s=${artist[0]}"
+                "https://www.theaudiodb.com/api/v1/json/523532/search.php?s=${artist[0]}"
             val okHttpClient: OkHttpClient = OkHttpClient()
             val request: Request = Request.Builder().url(url).build()
             okHttpClient.newCall(request).enqueue(object : Callback {

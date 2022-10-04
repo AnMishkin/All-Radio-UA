@@ -44,4 +44,9 @@
     <string name="add_radio_station_message">Your station has been added to the list of radio stations!</string>
     <string name="del_radio_station_message">Your station has been removed from the list of radio stations!</string>
     <string name="error_play_station">This radio station is currently unavailable!</string>
+
+    <string name="stations">Stations</string>
+    <string name="love_stations">Favorite</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
 </resources>

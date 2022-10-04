@@ -3,19 +3,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/listFragmentItem"
-        android:icon="@drawable/ic_baseline_list_24"
-        tools:ignore="MenuTitle" />
+        android:icon="@drawable/ic_baseline_radio_24"
+        tools:ignore="MenuTitle"
+        android:title="@string/list_menu_item"
+        />
     <item
         android:id="@+id/favoriteFragmentItem"
         android:icon="@drawable/ic_baseline_favorite_24"
-        tools:ignore="MenuTitle" />
+        tools:ignore="MenuTitle"
+        android:title="@string/fav_menu_item"/>
     <item
         android:id="@+id/historyFragmentItem"
         android:icon="@drawable/ic_baseline_history_24"
-        tools:ignore="MenuTitle" />
+        tools:ignore="MenuTitle"
+        android:title="@string/history_menu_item"/>
     <item
         android:id="@+id/settingFragmentItem"
         android:icon="@drawable/ic_baseline_settings_24"
-        tools:ignore="MenuTitle" />
+        tools:ignore="MenuTitle"
+        android:title="@string/set_menu_item"/>
 
 </menu>

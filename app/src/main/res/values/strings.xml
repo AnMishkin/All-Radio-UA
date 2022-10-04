@@ -61,5 +61,11 @@
     <string name="del_radio_station_message">Your station has been removed from the list of radio stations!</string>
     <string name="error_play_station">В даний момент, дана радіостанція недоступна!</string>
 
+    <string name="stations">Станції</string>
+    <string name="love_stations">Улюблене</string>
+    <string name="history">Історія</string>
+    <string name="settings">Налаштування</string>
+
+
 
 </resources>

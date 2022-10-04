@@ -28,6 +28,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.airbnb.lottie.LottieAnimationView
 import com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer
+import com.gauravk.audiovisualizer.visualizer.HiFiVisualizer
 import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.ExoPlaybackException.*
 import com.google.android.exoplayer2.PlaybackException.*
@@ -189,6 +190,7 @@ class MainActivity : AppCompatActivity() {
         setMediaInfoInMiniPlayer()
         mAdView.destroy()
         mExoPlayer?.stop()
+        mVisualizer?.release()
 
     }
 
@@ -211,7 +213,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStop() {
         try {
+            motionLayout?.transitionToEnd()
             unregisterReceiver(timerBroadcastReceiver)
+
         } catch (e: java.lang.Exception) {
             e.stackTrace
         }
@@ -222,9 +226,10 @@ class MainActivity : AppCompatActivity() {
         firstStartStatus = preferencesHelper.getFirstStart()
         if (firstStartStatus) {
             initDb()
-
+            updateDb()
 
         } else {
+            updateDb()
             startPlayerService()
         }
     }
@@ -691,7 +696,7 @@ initAds()
         private fun posterRequestOkhttp(mediaMetadata: MediaMetadata) {
             val artist = mediaMetadata.title.toString().split("-")
             val url =
-                "https://www.theaudiodb.com/api/v1/json/2/search.php?s=${artist[0]}"
+                "https://www.theaudiodb.com/api/v1/json/523532/search.php?s=${artist[0]}"
             val okHttpClient: OkHttpClient = OkHttpClient()
             val request: Request = Request.Builder().url(url).build()
             okHttpClient.newCall(request).enqueue(object : Callback {

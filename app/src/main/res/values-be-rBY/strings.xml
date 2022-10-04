@@ -43,4 +43,9 @@
     <string name="add_radio_station_message">Ваша станцыя дададзена ў спіс радыёстанцый!</string>
     <string name="del_radio_station_message">Ваша станцыя была выдаленая са спісу радыёстанцый!</string>
     <string name="error_play_station">У дадзены момант, дадзеная радыёстанцыя недаступная!</string>
+
+    <string name="stations">Станцыі</string>
+    <string name="love_stations">Любімы</string>
+    <string name="history">Гісторыя</string>
+    <string name="settings">Налады</string>
 </resources>
