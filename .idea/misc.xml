@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1635" />
+        <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.362" />
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/drawable/ic_baseline_radio_24.xml" value="0.1635" />
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/layout/custom_player_view.xml" value="0.36186594202898553" />
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/layout/favorite_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/razrabotka/AllRadioUA add depensis/app/src/main/res/layout/history_fragment.xml" value="0.36666666666666664" />

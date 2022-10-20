@@ -26,16 +26,6 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         app:srcCompat="@drawable/ic_baseline_expand_more_24" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/netAnim"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:visibility="invisible"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/error_network_anim" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,6 +61,15 @@
             android:textSize="14sp"
             android:textStyle="italic" />
 
+        <ImageButton
+            android:id="@+id/favoriteImageButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+
         <TextView
             android:id="@+id/fmFrequencyTextView"
             android:layout_width="match_parent"
@@ -79,25 +78,6 @@
             android:textColor="#FFEB3B"
             android:textSize="16sp"
             android:visibility="gone" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/favAnimationView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:visibility="invisible"
-            app:lottie_autoPlay="false"
-            app:lottie_loop="false"
-            app:lottie_rawRes="@raw/like"
-            tools:visibility="invisible" />
-
-        <ImageButton
-            android:id="@+id/favoriteImageButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true" />
 
     </LinearLayout>
 
@@ -151,6 +131,26 @@
         android:foregroundGravity="center"
         app:adSize="SMART_BANNER"
         app:adUnitId="ca-app-pub-3971991853344828/3197510729" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/netAnim"
+        android:layout_width="314dp"
+        android:layout_height="469dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/error_network_anim" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/favAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/like"
+        tools:visibility="invisible" />
 
 
 </RelativeLayout>

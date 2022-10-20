@@ -5,11 +5,11 @@ import android.animation.Animator
 import android.annotation.SuppressLint
 import android.content.*
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
-import android.view.Gravity
 import android.view.MotionEvent
 import android.view.View
 import android.widget.*
@@ -28,12 +28,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.airbnb.lottie.LottieAnimationView
 import com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer
-import com.gauravk.audiovisualizer.visualizer.HiFiVisualizer
 import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.ExoPlaybackException.*
-import com.google.android.exoplayer2.PlaybackException.*
 import com.google.android.exoplayer2.ui.PlayerControlView
-import com.google.android.exoplayer2.ui.PlayerNotificationManager
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
@@ -47,8 +44,6 @@ import de.hdodenhof.circleimageview.CircleImageView
 import download.mishkindeveloper.AllRadioUA.R
 import download.mishkindeveloper.AllRadioUA.data.entity.RadioWave
 import download.mishkindeveloper.AllRadioUA.data.entity.Track
-import download.mishkindeveloper.AllRadioUA.data.repository.RadioWaveRepository
-import download.mishkindeveloper.AllRadioUA.databinding.CustomPlayerViewBinding
 import download.mishkindeveloper.AllRadioUA.helper.PreferenceHelper
 import download.mishkindeveloper.AllRadioUA.listeners.FragmentSettingListener
 import download.mishkindeveloper.AllRadioUA.services.PlayerService
@@ -62,16 +57,17 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 import java.text.SimpleDateFormat
-import java.time.Clock
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.Period
 import java.util.*
 import javax.inject.Inject
 import kotlin.properties.Delegates
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var timer: Timer
+    private val noDelay = 5000L
+    private val everyFiveSeconds = 5000L
+
     private var mExoPlayer: ExoPlayer? = null
     private var mPlayerService: PlayerService? = null
     private  var mPlayerView: PlayerControlView? = null
@@ -180,6 +176,8 @@ class MainActivity : AppCompatActivity() {
         performSearch()
         initAds()
 
+
+
         //checkDate()
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
     }
@@ -209,6 +207,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         unregisterReceiver(timerBroadcastReceiver)
+
     }
 
     override fun onStop() {
@@ -226,7 +225,7 @@ class MainActivity : AppCompatActivity() {
         firstStartStatus = preferencesHelper.getFirstStart()
         if (firstStartStatus) {
             initDb()
-            updateDb()
+            //updateDb()
 
         } else {
             updateDb()
@@ -623,7 +622,7 @@ initAds()
                     MediaItem.fromUri(url!!)
                 mPlayerService?.getPlayer()?.setMediaItem(mediaItem)
                 mPlayerService?.setRadioWave(viewModel.getRadioWaveForId(id))
-//Log.d("Mylog","$url")
+Log.d("Mylog","радиостанция $url")
                // MotionEvent.ACTION_UP
 
             }
@@ -756,8 +755,33 @@ initAds()
         override fun onPlayerError(error: PlaybackException) {
             val er = getString(R.string.error_play_station)
             when (error.errorCode) {
+
                 ERROR_CODE_IO_NETWORK_CONNECTION_FAILED -> {
+                    titleTextViewPlayer?.visibility = View.INVISIBLE
+                    mNameTextView?.visibility = View.INVISIBLE
+                    titleTextView.visibility = View.INVISIBLE
+                    favoriteImageButton?.visibility = View.INVISIBLE
+                    mVisualizer?.visibility = View.INVISIBLE
+                    mPosterImageView?.visibility = View.INVISIBLE
+                    posterImageView.visibility = View.INVISIBLE
                     animNetLottieAnimationView?.visibility = View.VISIBLE
+
+
+
+                    Toast.makeText(
+                        this@MainActivity,
+                        getString(R.string.error_network),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    Log.d("Mylog", "Пропажа интернета там где дожна біть анимация")
+
+                    //проверка на наличия интернета
+                    chekInternet()
+
+                    //конец проверка на наличия интернета
+
+
+
                 }
                 ERROR_CODE_IO_FILE_NOT_FOUND -> {
                     Toast.makeText(
@@ -785,6 +809,7 @@ initAds()
                 TYPE_UNEXPECTED -> {
                     Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
                 }
+
                 else -> {
                     Toast.makeText(
                         this@MainActivity,
@@ -800,11 +825,35 @@ initAds()
             }
 
             }
+        //проверка на наличия интернета
+fun chekInternet(){
+            val timerTask = object : TimerTask() {
+                override fun run() {
+                    runOnUiThread {
+                        Log.d("Mylog", "Попытка запуска радиостанции после отключения интернета")
+                        mExoPlayer?.prepare()
+                        mExoPlayer?.play()
+
+                        timer.cancel()
+                    }
+                }
+            }
+            timer = Timer()
+            timer.schedule(timerTask, noDelay, everyFiveSeconds)
+            if (mExoPlayer?.isPlaying == true){
+                //animNetLottieAnimationView?.visibility = View.INVISIBLE
+//                                        timer.cancel()
+//                                        timer.purge()
+                Log.d("Mylog", "выключится таймер")
+            }
+}
 
 
+        //конец проверка на наличия интернета
 
         override fun onPlayerErrorChanged(error: PlaybackException?) {
-            animNetLottieAnimationView?.visibility = View.INVISIBLE
+            //убрал с основного кода
+            //animNetLottieAnimationView?.visibility = View.INVISIBLE
             //Log.d("Mylog","ОШИБКА ЗАПУСКА РАДИОСТАНЦИИ")
         }
     }
@@ -827,6 +876,15 @@ initAds()
     private fun isPlayingMedia(isPlaying: Boolean) {
         if (isPlaying) {
             playImageView?.setImageResource(R.drawable.ic_baseline_pause_24)
+            titleTextViewPlayer?.visibility = View.VISIBLE
+            mNameTextView?.visibility = View.VISIBLE
+            titleTextView.visibility = View.VISIBLE
+            favoriteImageButton?.visibility = View.VISIBLE
+            mVisualizer?.visibility = View.VISIBLE
+            mPosterImageView?.visibility = View.VISIBLE
+            posterImageView.visibility = View.VISIBLE
+
+            animNetLottieAnimationView?.visibility = View.INVISIBLE
 
             motionLayout?.transitionToEnd()
             //Log.d("Mylog","открылся еквалайзер")
