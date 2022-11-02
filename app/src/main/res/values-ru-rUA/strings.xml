@@ -49,4 +49,9 @@
     <string name="love_stations">Любимые</string>
     <string name="history">История</string>
     <string name="settings">Настройки</string>
+
+    <string name="permosion_messege_test">Згода на запис аудио потрібна,для візуалізації програвання радіостанції! Программа не робить ніякого запису!</string>
+    <string name="permosion_messege_top">Потрібна згода!</string>
+    <string name="permosion_messege_cancel">Скасувати</string>
+
 </resources>

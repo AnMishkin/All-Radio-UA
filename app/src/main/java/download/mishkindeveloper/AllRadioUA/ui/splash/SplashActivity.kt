@@ -1,9 +1,14 @@
 package download.mishkindeveloper.AllRadioUA.ui.splash
 
+
+
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.ConnectivityManager
 import android.net.Network
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
@@ -14,6 +19,7 @@ import androidx.core.content.ContextCompat
 import download.mishkindeveloper.AllRadioUA.R
 import download.mishkindeveloper.AllRadioUA.ui.main.MainActivity
 
+
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
     private var repeatImageButton: ImageButton? = null
@@ -22,6 +28,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         initButton()
+
         startActivityOrShowToastsError()
     }
 
@@ -60,4 +67,6 @@ class SplashActivity : AppCompatActivity() {
         finish()
         startActivity(intent)
     }
+
+
 }

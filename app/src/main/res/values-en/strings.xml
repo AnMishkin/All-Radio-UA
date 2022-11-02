@@ -49,4 +49,9 @@
     <string name="love_stations">Favorite</string>
     <string name="history">History</string>
     <string name="settings">Settings</string>
+
+    <string name="permosion_messege_test">Consent to record audio is required for visualization of radio station playback! The program does not record anything!</string>
+    <string name="permosion_messege_top">Consent is required!</string>
+    <string name="permosion_messege_cancel">Cancel</string>
+
 </resources>

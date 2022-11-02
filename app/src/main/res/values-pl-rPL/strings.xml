@@ -50,4 +50,8 @@
     <string name="love_stations">Ulubiony</string>
     <string name="history">Fabuła</string>
     <string name="settings">Ustawienia</string>
+
+    <string name="permosion_messege_test">Zgoda na nagrywanie dźwięku jest wymagana do wizualizacji odtwarzania stacji radiowej! Program niczego nie nagrywa!</string>
+    <string name="permosion_messege_top">Zgoda jest wymagana!</string>
+    <string name="permosion_messege_cancel">Anulować</string>
 </resources>

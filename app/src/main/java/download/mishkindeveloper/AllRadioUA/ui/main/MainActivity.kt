@@ -5,7 +5,6 @@ import android.animation.Animator
 import android.annotation.SuppressLint
 import android.content.*
 import android.content.pm.PackageManager
-import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
@@ -56,6 +55,7 @@ import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
+import java.security.Permission
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
@@ -63,6 +63,7 @@ import kotlin.properties.Delegates
 
 
 class MainActivity : AppCompatActivity() {
+    private val RECORD_PERMISSION_CODE = 1
 
     private lateinit var timer: Timer
     private val noDelay = 5000L
@@ -177,6 +178,7 @@ class MainActivity : AppCompatActivity() {
         initAds()
 
 
+        //isRecordAudioPermissionGranted()
 
         //checkDate()
         //titleToolTextView?.text = items.size.toString()+"-"+getString(R.string.list_menu_item)
@@ -202,6 +204,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         registerReceiver(timerBroadcastReceiver, IntentFilter(getString(R.string.intent_filter)))
         mAdView.resume()
+        //requestRecordPermission()
     }
 
     override fun onPause() {
@@ -247,7 +250,7 @@ class MainActivity : AppCompatActivity() {
         favoriteImageButton?.setImageResource(R.drawable.ic_baseline_favorite_24)
         lottieAnimationView?.visibility = View.VISIBLE
         lottieAnimationView?.playAnimation()
-
+        Log.d("Mylog","Клацнули кнопку добавить в ибранное")
     }
 
     private fun favoriteStatusTrue() {
@@ -428,7 +431,7 @@ initAds()
             }
             R.id.settingFragmentItem -> {
                 createSettingFragment()
-                loadPageAds()
+                //loadPageAds()
                 searchImageButton.visibility = View.INVISIBLE
 
             }
@@ -477,7 +480,8 @@ initAds()
             setParamMediaIfScrollMiniPlayer()
             checkButtonPlayInMiniPlayer()
             if (mPlayerService == null) return
-            setMediaSessionAndVisual()
+            requestRecordPermission()
+            //setMediaSessionAndVisual()
         }
 
         override fun onTransitionTrigger(
@@ -554,16 +558,51 @@ initAds()
 
     }
 
+   // private fun isRecordAudioPermissionGranted(): Boolean {
+//        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) ==
+//                PackageManager.PERMISSION_GRANTED
+//            ) {
+//                // put your code for Version>=Marshmallow
+//                true
+//            } else {
+//                if (shouldShowRequestPermissionRationale(Manifest.permission.RECORD_AUDIO)) {
+//                    Toast.makeText(
+//                        this,
+//                        "App required access to audio", Toast.LENGTH_SHORT
+//                    ).show()
+//                }
+//                requestPermissions(
+//                    arrayOf(
+//                        Manifest.permission.RECORD_AUDIO
+//                    ), 0
+//                )
+//                false
+//            }
+//        } else {
+//            // put your code for Version < Marshmallow
+//            true
+//        }
+//    }
 
     private fun initPermission() {
-        if (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.RECORD_AUDIO
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            val permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
-            ActivityCompat.requestPermissions(this, permissions, 0)
+//        if (ContextCompat.checkSelfPermission(
+//                this,
+//                Manifest.permission.RECORD_AUDIO
+//            ) != PackageManager.PERMISSION_GRANTED
+//        ) {
+//            val permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
+//            ActivityCompat.requestPermissions(this, permissions, 0)
+//            Log.d("Mylog","разрешение записи аудио - $permissions")
+//        }
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+            //Toast.makeText(this, "You have already granted this permission!",
+                //Toast.LENGTH_LONG).show();
+        } else {
+            requestRecordPermission();
         }
+
     }
 
     fun initDb() {
@@ -613,17 +652,23 @@ initAds()
     }
 
     private fun setMediaItem() {
+        //requestRecordPermission()
         val id = preferencesHelper.getIdPlayMedia()
         val url: String?
         try {
-            if (mExoPlayer!!.currentMediaItem == null) {
-                url = viewModel.getRadioWaveForId(id).url
-                val mediaItem: MediaItem =
-                    MediaItem.fromUri(url!!)
-                mPlayerService?.getPlayer()?.setMediaItem(mediaItem)
-                mPlayerService?.setRadioWave(viewModel.getRadioWaveForId(id))
-Log.d("Mylog","радиостанция $url")
-               // MotionEvent.ACTION_UP
+            if (mExoPlayer!!.currentMediaItem == null)
+              {
+
+                    url = viewModel.getRadioWaveForId(id).url
+                    val mediaItem: MediaItem =
+                        MediaItem.fromUri(url!!)
+                    mPlayerService?.getPlayer()?.setMediaItem(mediaItem)
+                    mPlayerService?.setRadioWave(viewModel.getRadioWaveForId(id))
+//Log.d("Mylog","радиостанция $url")
+                    // MotionEvent.ACTION_UP
+                    //checkPermision()
+                    //initPermission()
+                    //requestRecordPermission()
 
             }
         } catch (e: NullPointerException) {
@@ -636,6 +681,8 @@ Log.d("Mylog","радиостанция $url")
             mPlayerService = (binder as PlayerService.PlayerBinder).getService()
             mExoPlayer = mPlayerService?.getPlayer()
             mPlayerService?.getRadioWave()?.id?.let { preferencesHelper.setIdPlayMedia(it) }
+            //onRequestPermissionsResult()
+
             setMediaItem()
             isPlayingMedia(mExoPlayer!!.isPlaying)
             setTrackInfo()
@@ -766,7 +813,7 @@ Log.d("Mylog","радиостанция $url")
                     posterImageView.visibility = View.INVISIBLE
                     animNetLottieAnimationView?.visibility = View.VISIBLE
 
-
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 0 ")
 
                     Toast.makeText(
                         this@MainActivity,
@@ -789,25 +836,31 @@ Log.d("Mylog","радиостанция $url")
                         getString(R.string.error_payback),
                         Toast.LENGTH_SHORT
                     ).show()
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 1 ")
                 }
                 ERROR_CODE_AUDIO_TRACK_INIT_FAILED -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 2")
                 }
                 ERROR_CODE_FAILED_RUNTIME_CHECK ->{
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 3")
                 }
                 TYPE_REMOTE -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 4 ")
                 }
                 TYPE_RENDERER -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 5")
                 }
                 TYPE_SOURCE -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 6")
                 }
                 TYPE_UNEXPECTED -> {
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 7")
+                }
+                ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT ->{
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 8")
+                }
+                ERROR_CODE_TIMEOUT ->{
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 9")
                 }
 
                 else -> {
@@ -818,8 +871,8 @@ Log.d("Mylog","радиостанция $url")
 
                     ).show()
 
-                    Log.d("Mylog", "ОШИБКА ЗАПУСКА ")
-
+                    Log.d("Mylog", "ОШИБКА ЗАПУСКА 10")
+                    //chekInternet()
 
                 }
             }
@@ -887,6 +940,7 @@ fun chekInternet(){
             animNetLottieAnimationView?.visibility = View.INVISIBLE
 
             motionLayout?.transitionToEnd()
+
             //Log.d("Mylog","открылся еквалайзер")
         } else {
             playImageView?.setImageResource(R.drawable.ic_baseline_play_arrow_24)
@@ -1051,4 +1105,96 @@ fun chekInternet(){
 //        //var period = Period.of(0, 0, 1)
 //        Log.d("Mylog","$date")
 //    }
+
+    //проверка дали ли разрешение на запись аудио
+//    private fun isRecordAudioPermissionGranted(): Boolean {
+//        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) ==
+//                PackageManager.PERMISSION_GRANTED
+//            ) {
+//                // put your code for Version>=Marshmallow
+//                true
+//            } else {
+//                if (shouldShowRequestPermissionRationale(Manifest.permission.RECORD_AUDIO)) {
+//                    Toast.makeText(
+//                        this,
+//                        "App required access to audio", Toast.LENGTH_SHORT
+//                    ).show()
+//                }
+//                requestPermissions(
+//                    arrayOf(
+//                        Manifest.permission.RECORD_AUDIO
+//                    ), 0
+//                )
+//                false
+//            }
+//        } else {
+//            // put your code for Version < Marshmallow
+//            true
+//        }
+//    }
+
+    //сама проверка
+//    private fun checkPermision(){
+//        if(!isRecordAudioPermissionGranted())
+//        {
+//            Toast.makeText(getApplicationContext(), "Need to request permission", Toast.LENGTH_LONG).show();
+//        }
+//        else{
+//            Toast.makeText(getApplicationContext(), "No need to request permission", Toast.LENGTH_LONG).show();
+//        }
+//    }
+
+    //НОВАЯ ПРОВЕРКА
+    private fun requestRecordPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(
+                this,
+                Manifest.permission.RECORD_AUDIO
+            )
+        ) {
+            AlertDialog.Builder(this)
+                .setTitle(R.string.permosion_messege_top)
+                .setMessage(R.string.permosion_messege_test)
+                .setPositiveButton(
+                    "Ok"
+                ) { dialog, which ->
+                    ActivityCompat.requestPermissions(
+                        this@MainActivity,
+                        arrayOf(Manifest.permission.RECORD_AUDIO),
+                        RECORD_PERMISSION_CODE
+                      )
+
+                }
+                .setNegativeButton(
+                    R.string.permosion_messege_cancel
+                ) { dialog, which -> dialog.dismiss() }
+                .create().show()
+
+        }
+        else
+            ActivityCompat.requestPermissions(
+            this,
+            arrayOf(Manifest.permission.RECORD_AUDIO),
+            RECORD_PERMISSION_CODE
+        )
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String?>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == RECORD_PERMISSION_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                setMediaSessionAndVisual()
+                //Toast.makeText(this, "Permission GRANTED", Toast.LENGTH_LONG).show()
+            } else {
+                //requestRecordPermission()
+                //Toast.makeText(this, "Permission DENIED", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
+
 }

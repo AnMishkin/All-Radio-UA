@@ -30,7 +30,7 @@
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/62488e30f985c2fcc9c6e3d89b070d30/transformed/appcompat-1.5.1-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/3383be9a22d0f4d826eb9ea6f5c9372a/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/394317427bdfe3ce491edc953e00d82c/transformed/jetified-firebase-messaging-ktx-23.0.8-api.jar</arg>
-                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6e70dc73049f684c19b253b8c9979d93/transformed/jetified-play-services-ads-21.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/33d4243b056415040fd38f76c720d95b/transformed/jetified-play-services-ads-21.3.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/c110f750335f8a74b502a8f5ee49cd5e/transformed/jetified-firebase-database-ktx-20.0.6-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/31a705b6b5c616d94f2de63dbe3cfb90/transformed/jetified-firebase-analytics-ktx-21.0.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/8e5c4fb87232d9c5eef6f72ed64e60b2/transformed/jetified-firebase-common-ktx-20.1.2-api.jar</arg>
@@ -51,8 +51,8 @@
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2ee8723921ceefa918aea9853aa6691c/transformed/jetified-firebase-iid-interop-17.1.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/2b2fe96bb4ecfcf8c45eebebab8a319c/transformed/jetified-firebase-installations-interop-17.0.2-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/674d1b9b8eb73f5a7ac87aaaebcab3e8/transformed/jetified-play-services-tasks-18.0.1-api.jar</arg>
-                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/c8417d6b1e9f22ad650b812b6b400c43/transformed/jetified-play-services-ads-lite-21.2.0-api.jar</arg>
-                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/1fcd49560e8e5ba68d0186cf62379ed8/transformed/jetified-play-services-ads-base-21.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6266550860dc7ff5abb6eebe56d19829/transformed/jetified-play-services-ads-lite-21.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/3f9e8f7410e39ee6b30352e8e1fe4645/transformed/jetified-play-services-ads-base-21.3.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/5486b1a0ff3590ec2d782446cc614e40/transformed/jetified-play-services-measurement-21.1.1-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/6d157a9f1fbf4bbcfdbc0bf33f8dc68e/transformed/jetified-user-messaging-platform-2.0.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../AutoClicker3/.gradle/caches/transforms-3/21b5eeaf7e2bfb810edcc789ddf99bb6/transformed/jetified-play-services-measurement-sdk-21.1.1-api.jar</arg>
@@ -273,7 +273,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.5.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging-ktx:23.0.8@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads:21.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads:21.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-ktx:20.0.6@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-ktx:21.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common-ktx:20.1.2@aar" level="project" />
@@ -294,8 +294,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-iid-interop:17.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:18.0.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-lite:21.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-base:21.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-lite:21.3.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-base:21.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement:21.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.ump:user-messaging-platform:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk:21.1.1@aar" level="project" />
