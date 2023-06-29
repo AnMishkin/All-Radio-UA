@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Radio UA</string>
+    <string name="app_name">All Radio UA</string>
     <string name="error_network">No internet access</string>
     <string name="dev_name">Developed by Mishkin</string>
     <string name="name_station">Station name</string>
@@ -18,7 +18,7 @@
     <string name="desc_rb">Z…А</string>
     <string name="popular_rb">From the most listened to</string>
     <string name="not_popular_rb">From the most unlistened</string>
-    <string name="title_sort_menu">Сортировка</string>
+    <string name="title_sort_menu">Sort</string>
     <string name="error_payback">Sorting</string>
     <string name="list_rb">List</string>
     <string name="grid_rb">Grid</string>
@@ -40,4 +40,43 @@
     <string name="app_widget_description">All Radio UA</string>
     <string name="title_widget">Radio</string>
     <string name="sub_title_widget">Track</string>
+
+    <string name="add_radio_station_message">Your station has been added to the list of radio stations!</string>
+    <string name="del_radio_station_message">Your station has been removed from the list of radio stations!</string>
+    <string name="error_play_station">This radio station is currently unavailable!</string>
+
+    <string name="stations">Stations</string>
+    <string name="love_stations">Favorite</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+
+    <string name="permosion_messege_test">Consent to record audio is required for visualization of radio station playback! The program does not record anything!</string>
+    <string name="permosion_messege_top">Consent is required!</string>
+    <string name="permosion_messege_cancel">Cancel</string>
+
+    <string name="update_available">Update available</string>
+    <string name="update_yes">Yes</string>
+    <string name="update_no">No</string>
+    <string name="update_text">Your app has an update available. Do you want to go to the Google Play page to update?</string>
+    <string name="update_canceled">Update canceled!</string>
+    <string name="new_app_is_ready">New app is ready!</string>
+    <string name="update_install">Install</string>
+
+    <string name="leave_review">Please leave a review</string>
+    <string name="text_review">Every review is very important for us! Spend 1 minute of your time - help develop the application! Thanks a lot! Glory to Ukraine!</string>
+    <string name="laiter_review">Later</string>
+    <string name="ok_review">With pleasure!</string>
+
+    <string name="title_alarm_stop">You are sure?</string>
+    <string name="text_alarm_stop">Do you really want to turn off the alarm?</string>
+    <string name="alarm_set">Alarm clock set!</string>
+    <string name="set_alarm_and_radiostation">Choose a radio station for your alarm!</string>
+    <string name="alarm_show_notification">Alarm</string>
+    <string name="alarm_text_notification">Turn off the alarm!</string>
+    <string name="time_picker_text">Pick a time for the alarm!</string>
+
+    <string name="title_notification_permission">Please give permission!</string>
+    <string name="text_notification_permission">This permission is necessary for the correct operation of the alarm clock, namely the display of a notification during its operation!</string>
+    <string name="settings_notification_permission">Go to settings</string>
+    <string name="cancel_notification_permission">Cancel</string>
 </resources>

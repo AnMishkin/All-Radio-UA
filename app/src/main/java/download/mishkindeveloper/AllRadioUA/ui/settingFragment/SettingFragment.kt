@@ -72,13 +72,19 @@ class SettingFragment : Fragment() {
             when (i) {
                 R.id.listRadioButton -> {
                     preferencesHelper.setDisplayListType(DisplayListType.List)
+                    (activity as MainActivity?)?.createListFragment()
                 }
                 R.id.gridRadioButton -> {
                     preferencesHelper.setDisplayListType(DisplayListType.Grid)
+                    (activity as MainActivity?)?.createListFragment()
+
                 }
             }
         }
-        updateLottieAnimView?.setOnClickListener { updateDbAndAnim() }
+        updateLottieAnimView?.setOnClickListener {
+            updateDbAndAnim()
+
+        }
         trashLottieAnimationView?.setOnClickListener { clearHistoryAndAnim() }
         clearHistoryTextView?.setOnClickListener { clearHistoryAndAnim() }
         updateStationTextView?.setOnClickListener { updateDbAndAnim() }
@@ -87,12 +93,14 @@ class SettingFragment : Fragment() {
     private fun clearHistoryAndAnim() {
         trashLottieAnimationView?.playAnimation()
         viewModel.deleteAllHistory()
+        (activity as MainActivity?)?.createListFragment()
         Toast.makeText(context, getString(R.string.history_clear_toast), Toast.LENGTH_SHORT)
             .show()
     }
 
     private fun updateDbAndAnim() {
         updateLottieAnimView?.playAnimation()
+        (activity as MainActivity?)?.createListFragment()
         (activity as MainActivity?)?.updateDb()
     }
 

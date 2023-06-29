@@ -3,10 +3,12 @@ package download.mishkindeveloper.AllRadioUA.ui.listFragment
 import android.content.*
 import android.os.Bundle
 import android.os.IBinder
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -15,8 +17,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.exoplayer2.ExoPlayer
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.switchmaterial.SwitchMaterial
+import com.google.firebase.database.*
+import com.google.firebase.database.annotations.NotNull
 import download.mishkindeveloper.AllRadioUA.listeners.FragmentSettingListener
 import download.mishkindeveloper.AllRadioUA.listeners.MenuItemIdListener
 import download.mishkindeveloper.AllRadioUA.R
@@ -28,23 +33,26 @@ import download.mishkindeveloper.AllRadioUA.ui.listFragment.adapter.ListFragment
 import download.mishkindeveloper.AllRadioUA.ui.main.MainActivity
 import download.mishkindeveloper.AllRadioUA.ui.main.MainViewModel
 import dagger.android.support.AndroidSupportInjection
+import download.mishkindeveloper.AllRadioUA.ui.adMobNative.AdmobNativeAdAdapter
 import javax.inject.Inject
 
+
+
 class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
-    private var mRecyclerView: RecyclerView? =null
-    private  var mGridLayoutManager: GridLayoutManager?=null
-    private  var mAdapter: ListFragmentRecyclerViewAdapter?=null
-    private  var sortImageButton: ImageButton?=null
+    private var mRecyclerView: RecyclerView? = null
+    private var mGridLayoutManager: GridLayoutManager? = null
+    private var mAdapter: ListFragmentRecyclerViewAdapter? = null
+    private var sortImageButton: ImageButton? = null
     private var items: MutableList<RadioWave>? = null
     private var matchedRadioWave: ArrayList<RadioWave>? = null
-    private  var switch: SwitchMaterial?=null
+    private var switch: SwitchMaterial? = null
     private var mExoPlayer: ExoPlayer? = null
     private var mPlayerService: PlayerService? = null
-    private  var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>?=null
-    private  var bottomSheet: ConstraintLayout?=null
-    private  var sortNameRadioGroup: RadioGroup?=null
-    private  var hideBottomSheetImageButton: ImageButton?=null
-    private  var titleSortTextView: TextView?=null
+    private var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>? = null
+    private var bottomSheet: ConstraintLayout? = null
+    private var sortNameRadioGroup: RadioGroup? = null
+    private var hideBottomSheetImageButton: ImageButton? = null
+    private var titleSortTextView: TextView? = null
     private var checkStateSwitch: Boolean = false
 
     @Inject
@@ -52,7 +60,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
-    private  var displayListType: DisplayListType?=null
+    private var displayListType: DisplayListType? = null
 
     @Inject
     lateinit var viewModel: MainViewModel
@@ -99,6 +107,8 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet!!)
         titleSortTextView = view.findViewById(R.id.titleSortTextView)
     }
+//попытка обновления базы при выборе сортировки
+
 
     private fun initListeners() {
         hideBottomSheetImageButton?.setOnClickListener {
@@ -106,25 +116,39 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         }
         switch?.setOnClickListener {
             switchIsChecked()
+            bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
         }
         sortNameRadioGroup?.setOnCheckedChangeListener { _, i ->
             when (i) {
                 R.id.radioButtonDefault -> {
                     defaultSetPrefsAndUpdateRv()
+                    bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+                    setDefaultStatusAndUpdateUI()
                 }
                 R.id.radioButtonAsc -> {
                     ascSetPrefsAndUpdateRv()
+                    bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+                    setAscStatusAndUpdateUI()
                 }
                 R.id.radioButtonDesc -> {
                     descSetPrefsAndUpdateRv()
+                    bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+                    setDescStatusAndUpdateUI()
                 }
                 R.id.popularRadioButton -> {
                     popularSetPrefsAndUpdateRv()
+                    bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+                    setPopularStatusAndUpdateUI()
                 }
                 R.id.notPopularRadioButton -> {
                     notPopularSetPrefsAndUpdateRv()
+                    bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+                    setNotPopularStatusAndUpdateUI()
+
                 }
+
             }
+
         }
         sortImageButton?.setOnClickListener {
             bottomSheetBehavior?.state = BottomSheetBehavior.STATE_EXPANDED
@@ -134,14 +158,14 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
         }
     }
 
-    private fun switchIsChecked() {
-        if (switch?.isChecked==true) {
+    fun switchIsChecked() {
+        if (switch?.isChecked == true) {
             preferencesHelper.setSwitchEnabled(true)
             defaultListItem = viewModel.getCustomAll()
             updateRecyclerView(defaultListItem)
         } else {
             preferencesHelper.setSwitchEnabled(false)
-            defaultListItem = viewModel.getAllRadioWaves()
+            defaultListItem = viewModel.getCustomAll() + viewModel.getAllRadioWaves()
             updateRecyclerView(defaultListItem)
         }
     }
@@ -192,6 +216,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             sortNameRadioGroup?.check(R.id.radioButtonDefault)
             items = viewModel.getAllRadioWaves().toMutableList()
         }
+        items?.let { updateRecyclerView(it) }
     }
 
     private fun setAscStatusAndUpdateUI() {
@@ -200,6 +225,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             sortNameRadioGroup?.check(R.id.radioButtonAsc)
             items = viewModel.getAllSortAsc().toMutableList()
         }
+        items?.let { updateRecyclerView(it) }
     }
 
     private fun setDescStatusAndUpdateUI() {
@@ -208,6 +234,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             sortNameRadioGroup?.check(R.id.radioButtonDesc)
             items = viewModel.getAllSortDesc().toMutableList()
         }
+        items?.let { updateRecyclerView(it) }
     }
 
     private fun setPopularStatusAndUpdateUI() {
@@ -216,6 +243,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             sortNameRadioGroup?.check(R.id.popularRadioButton)
             items = viewModel.getPopularDesc().toMutableList()
         }
+        items?.let { updateRecyclerView(it) }
     }
 
     private fun setNotPopularStatusAndUpdateUI() {
@@ -224,6 +252,7 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             sortNameRadioGroup?.check(R.id.notPopularRadioButton)
             items = viewModel.getPopularAsc().toMutableList()
         }
+        items?.let { updateRecyclerView(it) }
     }
 
     private fun loadPrefsAndUpdateRadioButton() {
@@ -254,6 +283,8 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainActivity?)?.setSettingListener(this@ListFragment)
+        // Инициализируйте AdMob
+        context?.let { MobileAds.initialize(it) }
     }
 
     companion object
@@ -309,8 +340,13 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             radioWave.custom = true
             radioWave.url = urlEditText.text.toString()
             viewModel.updateRadioWave(radioWave)
+            //viewModel.getCustomAll()
+
+//            var custDef = ListFragment().defaultListItem
+//            updateRecyclerView(custDef)
             builder.dismiss()
             initAdapter()
+            //defaultListItem = viewModel.getCustomAll()+viewModel.getAllRadioWaves()
         }
     }
 
@@ -326,10 +362,18 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
     ) {
         updateButton.setOnClickListener {
             updateButtonEvent(nameEditText, radioWave, urlEditText, builder)
+            switchIsChecked()
+            //(activity as MainActivity?)?.updateDb()
+            // defaultListItem = viewModel.getCustomAll()+viewModel.getAllRadioWaves()
         }
 
         delButton.setOnClickListener {
             delButtonEvent(radioWave, builder)
+            switchIsChecked()
+            (activity as MainActivity?)?.updateDb()
+
+            Toast.makeText(this.context, R.string.del_radio_station_message, Toast.LENGTH_LONG)
+                .show()
         }
     }
 
@@ -394,7 +438,45 @@ class ListFragment : Fragment(), MenuItemIdListener, FragmentSettingListener {
             mPlayerService!!,
             this@ListFragment
         )
-        mRecyclerView?.adapter = mAdapter
+        displayListType = preferencesHelper.getDisplayListType()
+        when (displayListType) {
+        DisplayListType.List ->
+            {
+                val currentAdapter = mAdapter
+                if (currentAdapter != null) {
+                    Log.d("MyLog", "small ad view")
+                    val nativeAdId = "ca-app-pub-3971991853344828/3417223330"
+                    val nativeAdsType = "small" // Замените на "small", "medium" или "custom"
+                    val interval = 4 // Замените на желаемый интервал повторения рекламы
+                    val admobNativeAdAdapter = AdmobNativeAdAdapter.Builder
+                        .with(nativeAdId, currentAdapter, nativeAdsType)
+                        .adItemIterval(interval)
+                        .build()
+
+                    mRecyclerView?.adapter = admobNativeAdAdapter
+                }
+            }
+
+        DisplayListType.Grid ->
+        {
+            val currentAdapter = mAdapter
+            if (currentAdapter != null) {
+                Log.d("MyLog", "cutom ad view")
+                val nativeAdId = "ca-app-pub-3971991853344828/3417223330"
+                val nativeAdsType = "custom" // Замените на "small", "medium" или "custom"
+                val interval = 3 // Замените на желаемый интервал повторения рекламы
+                val admobNativeAdAdapter = AdmobNativeAdAdapter.Builder
+                    .with(nativeAdId, currentAdapter, nativeAdsType)
+                    .adItemIterval(interval)
+                    .build()
+
+                mRecyclerView?.adapter = admobNativeAdAdapter
+            }
+
+        }
+            else -> {}
+        }
+
         mAdapter?.setDisplayListType(displayListType!!)
     }
 }
